@@ -1,0 +1,186 @@
+
+// testimonials areas style
+
+.rts-test-one-image-inner{
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        z-index: -1;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        left: 13%;
+        bottom: -14%;
+        background-image: url(../images/testimonials/shape/01.svg);
+        animation: jump-1 5s linear infinite;
+    }
+    &::before{
+        position: absolute;
+        z-index: -1;
+        content: "";
+        height: 158px;
+        width: 220px;
+        background-repeat: no-repeat;
+        top: 8%;
+        left: -12%;
+        background-image: url(../images/testimonials/shape/02.png);
+    }
+}
+
+.testimonial-bottom-one{ 
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    .thumbnail{
+        margin-right: 20px;
+        img{
+            max-width: 80px;
+            height: 80px;
+        }
+    }
+    .details{
+        text-align: left;
+        a{
+            .title{
+                margin-bottom: 0px;
+                transition: .3s;
+            }
+            &:hover{
+                .title{
+                    color: var(--color-primary);
+                }
+            }
+        }
+        span{
+            margin-left: 0;
+            color: #5D666F;
+        }
+    }
+}
+
+.mySwipertestimonial{
+    .swiper-button-next{
+        right: 30%;
+        &::after{
+            content: "\f061";
+            font-family: "Font Awesome 5 Pro";
+            font-size: 16px;
+            color: #1C2539;
+            border-radius: 50% !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            box-shadow: 0px 9px 18px #1810100d;
+            border-radius: 8px;
+            transition: 0.3s;
+            line-height: 16px;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        &:hover{
+            &::after{
+                background: var(--color-primary);
+                color: #fff;
+            }
+        }
+    }
+    .swiper-button-prev{
+        left: 57%;
+        &::after{
+            content: "\f060";
+            font-family: "Font Awesome 5 Pro";
+            font-size: 16px;
+            color: #1C2539;
+            border-radius: 50% !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            box-shadow: 0px 9px 18px #1810100d;
+            border-radius: 8px;
+            transition: 0.3s;
+            line-height: 16px;
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        &:hover{
+            &::after{
+                background: var(--color-primary);
+                color: #fff;
+            }
+        }
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        top: 85%;
+    }
+}
+
+
+
+.rts-client-feedback{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        height: 200px;
+        width: 200px;
+        top: 3%;
+        background-image: url(../images/testimonials/shape/03.png);
+        background-size: cover;
+        animation: jump-2 5s linear infinite;
+    }
+}
+
+
+
+
+
+.bg-customer-feedback{
+    background: #F6F6F6;
+}
+
+.testimopnial-wrapper-two{
+    padding: 50px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 11px 30px rgba(0, 0, 0, 0.02);
+    .test-header{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        .thumbnail{
+            position: relative;
+            &::after{
+                position: absolute;
+                right: -20%;
+                content: '';
+                background-image: url(../images/testimonials/icon/01.png);
+                top: 50%;
+                transform: translateY(-50%);
+                height: 35px;
+                width: 35px;
+
+            }
+            img{
+                max-width: 100%;
+            }
+        }
+        .name-desig{
+            margin-left: 37px;
+            .title{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .test-body{
+        p{
+        color: #5D666F;
+        font-size: 16px;
+        }
+    }
+}

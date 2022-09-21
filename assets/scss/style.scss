@@ -1,0 +1,47 @@
+
+
+/* Default  */
+
+@import'default/variables';
+@import'default/typography';
+@import'default/spacing';
+@import'default/reset';
+@import'default/forms';
+@import'default/mixins';
+@import'default/shortcode';
+@import'default/common';
+@import'default/animations';
+@import'default/text-animation';
+@import'default/sal';
+
+
+/* Header style hear  */
+@import'header/header';
+@import'header/nav';
+@import'header/breadcrumb';
+
+
+/* elements style hear  */
+@import'elements/button';
+@import'elements/swiper';
+@import'elements/banner';
+@import'elements/about';
+@import'elements/service';
+@import'elements/cta';
+@import'elements/business-goal';
+@import'elements/counterup';
+@import'elements/gallery';
+@import'elements/project';
+@import'elements/trusted-client';
+@import'elements/team';
+@import'elements/feature';
+@import'elements/testimonial';
+@import'elements/pricing';
+@import'elements/blog';
+@import'elements/appoinment';
+@import'elements/faq';
+@import'elements/contact';
+@import'elements/map-area';
+@import'elements/team-details';
+@import'elements/back-totop';
+@import'elements/footer';

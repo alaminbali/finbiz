@@ -1,0 +1,104 @@
+// map area start
+
+
+.bg-light-white{
+    background: #F7F7F7;
+}
+
+.rts-map-area{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        background-image: url(../images/contact/shape/01.png);
+        height: 105px;
+        width: 105px;
+        left: 53px;
+        top: -11%;
+        background-size: cover;
+        animation: rotateIt 10s linear infinite;
+    }
+}
+
+.mapdetails-inner-one{
+    margin-left: 305px;
+    display: flex;
+    .single-wized{
+        margin-right: 100px;
+        width: 50%;
+        &:last-child{
+            margin-right: 0;
+        }
+        .title{
+            position: relative;
+            margin-bottom: 40px;
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                height: 3px;
+                width: 50px;
+                background: var(--color-primary);
+            }
+        }
+        &:first-child{
+            border-right: 1px solid #E4E4E4;
+        }
+    }
+}
+
+.mapdetails-inner-one{
+    display: flex;
+    .left-area{
+        .details{
+            p{
+                margin-bottom: 3px;
+                color: #5D666F;
+            }
+            a{
+                &.number{
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #1C2539;
+                    margin-bottom: 30px;
+                }
+            }
+            p{
+                &.time-header{
+                    margin-top: 30px;
+                    margin-bottom: 5px;
+                    color: #5D666F;
+                }
+                &.time{
+                    color: #1C2539;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+    .right-area{
+        .details{
+            p{
+                margin-bottom: 3px;
+                color: #5D666F;
+            }
+            a{
+                color: #1C2539;
+                font-size: 16px;
+                font-weight: 700;
+            }
+            p{
+                &.headoffice{
+                    margin-top: 24px;
+                }
+                &.office{
+                    color: #1C2539;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

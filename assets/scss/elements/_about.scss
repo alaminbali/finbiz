@@ -1,0 +1,204 @@
+// about area start
+
+
+.about-inner{
+    p{
+        &.disc{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+.bg-about-sm-shape{
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/about/shape/01.png);
+        background-repeat: no-repeat;
+        top: 32%;
+        animation: jump-1 8s linear infinite;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/about/shape/02.png);
+        background-repeat: no-repeat;
+        top: 60%;
+        right: -2%;
+        animation: rotateIt 10s linear infinite;
+    }
+}
+
+
+.about-success-wrapper{
+    .single{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        i{
+            padding: 4px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            color: #fff;
+            font-size: 12px;
+            margin-right: 15px;
+        }
+        p{
+            &.details{
+                font-size: 16px;
+                color: #1C2539;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.about-one-thumbnail{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    .small-img{
+        position: absolute;
+        left: 0%;
+        top: 7%;
+        animation: jump-1 10s linear infinite;
+    }
+    .experience{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 32px;
+        background: var(--color-primary);
+        border-radius: 15px;
+        bottom: 7%;
+        left: 1%;
+        animation: jump-2 6s linear infinite;
+        width: 310px;
+        .single{
+            width: 50%;
+        }
+        .left{
+            .title{
+                color: #fff;
+                margin-bottom: 0;
+                font-family: var(--font-secondary);
+            }
+            p{
+                font-size: 22px;
+                color: #fff;
+                font-family: var(--font-secondary);
+                font-weight: 700;
+                margin-top: -8px;
+            }
+        }
+        .right{
+            p{
+                color: #fff;
+                line-height: 24px;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+// about area
+
+.about-image-v-inner{
+    .image-area{
+        display: flex;
+        position: relative;
+        .img-1{
+            border-top: 10px solid var(--color-primary);
+            padding-top: 10px;
+        }
+        .img-over{
+            position: absolute;
+            // left: 55%;
+            right: 0;
+            top: 0;
+            animation: jump-2 5s linear infinite;
+        }
+        .goal-button-wrapper{
+            .vedio-icone{
+                background: #fff;
+                padding: 65px;
+                border-radius: 50%;
+                .video-play-button{
+                    &::after{
+                        background: var(--color-primary);
+                    }
+                    span{
+                        border-left: 18px solid #ffffff;
+                    }
+                }
+            }
+            position: absolute;
+            bottom: -2%;
+            right: 29%;       
+        }
+    }
+}
+.about-progress-inner{
+    padding-left: 30px;
+    .title-area{
+        span{
+            color: var(--color-primary);
+            font-size: 16px;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+        }
+        .title{
+            margin-top: 5px;
+        }
+    }
+    .inner{
+        .rts-progress-one-wrapper{
+            padding: 40px;
+            background: #F7F7F7;
+            .meter{
+                background: #fff;
+                height: 15px;
+                display: flex;
+                align-items: center;
+                padding-left: 7px;
+                overflow: hidden;
+                span{
+                    height: 3px;
+                }
+            }
+            .single-progress{
+                border-bottom: none;
+                .progress-top{
+                    p{
+                        color: #1C2539;
+                    }
+                    
+                    span{
+                        color: var(--color-primary);
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        a{
+            &.rts-btn{
+                display: block;
+                max-width: max-content;
+                margin-top: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+
+// business goal style hear
+
+.business-goal-one{
+    position: relative;
+    img{
+        &.small{
+            position: absolute;
+            top: 9%;
+            transform: translateY(-50%);
+            right: 2%;
+            animation: jump-2 5s linear infinite;
+            z-index: 7;
+        }
+    }
+}
+
+.rts-business-goal{
+    margin-top: 50px;
+    .single-goal{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        img{
+            margin-right: 30px;
+        }
+        .goal-wrapper{
+            .title{
+                margin-bottom: 5px;
+            }
+            p{
+                color: #5D666F;
+            }
+        }
+    }
+}
+
+.goal-button-wrapper{
+    display: flex;
+    align-items: center;
+    .vedio-icone{
+        margin-left: 80px;
+    }
+}

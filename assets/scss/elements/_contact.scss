@@ -1,0 +1,132 @@
+// contact srea style
+
+
+.rts-contact-area.contact-one{
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: "";
+        background-image: url(../images/contact/shape/01.png);
+        right: 10%;
+        top: -8%;
+        height: 190px;
+        width: 190px;
+        z-index: -24;
+        animation: rotateIt 15s linear infinite;
+    }
+}
+
+.contact-form-area-one{
+    padding: 120px 100px;
+    background: #fff;
+    box-shadow: 0px 21px 46px #0000000a;
+}
+
+
+.contact-form-area-one{
+    form{
+        margin-top: 35px;
+        input{
+            height: 55px;
+            background: #F7F7F7;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            padding: 0 25px;
+            border: 1px solid transparent;
+            &:focus{
+                border: 1px solid var(--color-primary);
+            }
+        }
+        textarea{
+            border-radius: 15px;
+            background: #F7F7F7;
+            height: 150px;
+            padding: 15px 25px;
+            border: 1px solid transparent;  
+            &:focus{
+                border: 1px solid var(--color-primary);
+            }
+        }
+        .name-email{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            input{
+                width: 48.8%;
+            }
+        }
+    }
+    .rts-btn{
+        display: block;
+        max-width: max-content;
+        margin-top: 30px;
+    }
+}
+
+
+
+.contact-map-area-fluid{
+    position: relative;
+    .location{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 5;
+        transform: translate(-50%, -50%);
+        max-width: 100px;
+        height: auto;
+    }   
+}
+
+
+.rts-contact-fluid{
+    box-shadow: 0px 24px 39px rgba(0, 0, 0, 0.05);
+    .form-wrapper{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+.rts-contact-fluid{
+    .form-wrapper{
+        form{
+            .name-email{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                input{
+                    width: 48.5%;
+                }
+            }
+        }
+        input{
+            background: #F6F6F6;
+            height: 55px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            border: 1px solid transparent;
+            &:focus{
+                border: 1px solid var(--color-primary);
+            }
+        }
+        textarea{
+            height: 150px;
+            background:#F6F6F6;
+            border-radius: 15px;
+            padding: 15px 15px;
+            border: 1px solid transparent;
+            &:focus{
+                border: 1px solid var(--color-primary);
+            }
+        }
+    }
+    .rts-btn{
+        display: block;
+        max-width: max-content;
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+

@@ -1,0 +1,31 @@
+
+
+// call to action style hear
+
+
+.cta-one-bg{
+    background-image: url(../images/cta/01.jpg);
+    background-repeat: no-repeat;
+    background-color: #DF0A0A;
+    background-blend-mode: multiply;
+    overflow: hidden;
+    background-position: center;
+    object-fit: contain;
+    background-size: cover;
+}
+
+
+.cta-one-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 120px;
+    .cta-left{
+        width: 50%;
+    }
+    .title{
+        color: #fff;
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+}
