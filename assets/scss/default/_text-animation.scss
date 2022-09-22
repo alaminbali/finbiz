@@ -110,6 +110,11 @@ xclip
 .cd-headline.clip .cd-words-wrapper {
     overflow: hidden;
     vertical-align: middle;
+    position: relative;
+    margin-top: -20px;
+    b{
+        font-weight: 700;
+    }
 }
 
 .cd-headline.clip .cd-words-wrapper::after {
@@ -117,9 +122,9 @@ xclip
     position: absolute;
     top: 50%;
     right: 0;
-    width: 2px;
-    height: 80%;
-    background-color: rgba(255, 255, 255, 0.3);
+    width: 4px;
+    height: 100%;
+    background-color: var(--color-primary-3);
     transform: translateY(-50%);
 }
 

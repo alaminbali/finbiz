@@ -94,3 +94,99 @@
         }
     }
 }
+
+
+// banner three
+
+.bg_banner-three{
+    background-image: url(../images/banner/banner-04.jpg);
+    // height: 100vh;
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        height: 100%;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: #050a15b3;
+        z-index: -1;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        background-image: url(../images/banner/shape/04.png);
+        height: 100%;
+        width: 650px;
+        background-size: cover;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.banner-three-inner{
+    padding: 300px 0 100px 0;
+    max-width: 100%;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "Solution Model";
+        left: 15%;
+        width: 100%;
+        top: 36%;
+        color: #f1e2e200;
+        background-color: #00000038;
+        background-size: 100% 100%;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 0.5px #ffffff;
+        font-size: 150px;
+        height: 128px;
+        max-height: max-content;
+        min-width: max-content;
+        font-weight: 900;
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        opacity: .30;
+        font-family: var(--font-secondary);
+    }
+    .subtitle-banner{
+        color: #fff;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+    }
+    .title{
+        color: #fff;
+        font-size: 100px;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-top: 5px;
+        margin-bottom: 17px;
+    }
+    .disc{
+        color: #fff;
+        width: 68%;
+        margin-bottom: 46px;
+    }
+    .button-group{
+        .rts-btn{
+            margin-right: 25px;
+            &.btn-primary-3{
+                border: 1px solid transparent;
+                &.transparent{
+                    border: 1px solid #fff;
+                    &:hover{
+                        background: var(--color-primary-3);
+                        border: 1px solid transparent;
+                    }
+                }
+                &:hover{
+                    background: transparent;
+                    border: 1px solid #FFFFFF;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -439,3 +439,43 @@ body {
 
 
 
+.social-three-wrapper{
+    display: flex;
+    align-items: center;
+    li{
+        list-style: none;
+        margin: 0 21px;
+        &:first-child{
+            margin-left: 16px;
+        }
+        a{
+            position: relative;
+            z-index: 1;
+            transition: .3s;
+            color: #1C2539;
+            &::after{
+                position: absolute;
+                content: '';
+                background: #E8E8E8;
+                height: 40px;
+                width: 40px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                border-radius: 5px;
+                z-index: -1;
+                transition: .3s;
+            }
+            &:hover{
+                color: #fff;
+                &::after{
+                    background: var(--color-primary-3);
+                }
+            }
+        }
+    }
+}
+
+
+// index-three
+

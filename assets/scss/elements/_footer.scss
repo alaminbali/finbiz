@@ -200,10 +200,7 @@
     }
 }
 
-
-
 // copyright one
-
 .footer-one{
     .rts-copyright-area{
         border-top: 1px solid #21293D;
@@ -211,6 +208,179 @@
         p{
             font-size: 16px;
             color: #fff;
+        }
+    }
+}
+
+
+
+
+
+
+// footer three
+.footer-three{
+    background: #F6F6F6;
+    .copyright-area{
+        border-top: 1px solid #E2E2E2;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #1C2539;
+    }
+}
+
+.footer-three-single-wized{
+    &.mid-left{
+        padding-left: 15px;
+    }
+    &.mid-right{
+        margin-left: -38px;
+        margin-right: 37px;
+        .body{
+            p{
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 33px;
+            }
+            .update-wrapper{
+                .email-footer-area{
+                    display: flex;
+                    position: relative;
+                    input{
+                        height: 55px;
+                        border: 1px solid #E3E3E3;
+                        border-radius: 8px;
+                        padding-right: 60px;
+                        // border: 1px solid transparent;
+                        &:focus{
+                            border: 1px solid var(--color-primary-3);
+                        }
+                    }
+                    button{
+                        height: 55px;
+                        width: 55px;
+                        border-radius: 8px;
+                        background: var(--color-primary-3);
+                        color: #fff;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                }
+                .note-area{
+                    p{
+                        color: #5D666F;
+                        margin-top: 20px;
+                        font-weight: 400;
+                        span{
+                            color: var(--color-primary-3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.left{
+        a{
+            &.logo_footer{
+                padding-bottom: 25px;
+                display: block;
+            }
+        }
+        p{
+            &.disc{
+                margin-bottom: 40px;
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+    &.right{
+        .footer-gallery-inner{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            a{
+                overflow: hidden;
+                max-width: max-content;
+                height: 90px;
+                width: 90px;
+                border-radius: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                img{
+                    max-width: 90px;
+                    transition: .3s;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+    // mid left
+    .title{
+        font-size: 22px;
+    }
+    .body{
+        .info-wrapper{
+            .single{
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                &:last-child{
+                    margin-bottom: 0;
+                    .icon{
+                        position: relative;
+                        margin-top: -20px;
+                    }
+                }
+                .icon{
+                    margin-right: 25px;
+                    li{
+                        list-style: none;
+                        position: relative;
+                        z-index: 1;
+                        color: var(--color-primary-3);
+                        i{
+                            font-size: 14px;
+                        }
+                        &::after{
+                            position: absolute;
+                            content: '';
+                            height: 35px;
+                            width: 35px;
+                            background: #FFFFFF;
+                            box-shadow: 0px 9px 18px #1810100d;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            z-index: -1;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                .info{
+                    span{
+                        display: block;
+                        color: #5D666F;
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                    a{
+                        color: #1C2539;
+                        font-size: 16px;
+                        font-weight: 600;
+                        transition: .3s;
+                        line-height: 22px;
+                        &:hover{
+                            color: var(--color-primary-3);
+                        }
+                    }
+                }
+            }
         }
     }
 }

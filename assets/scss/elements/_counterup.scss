@@ -48,3 +48,27 @@
     }
 }
 
+
+
+.counter-wrapper-two{
+    .single-counter{
+        position: relative;
+        img{
+            margin-right: 0;
+            position: absolute;
+        }
+        .counter-details{
+            padding: 20px;
+            box-shadow: 0px 2px 20px #18101012;
+            width: 100%;
+            padding: 40px 40px 40px 70px;
+            margin-left: 60px;
+            .title{
+                color: #1C2539;
+            }
+            .disc{
+                color: #1C2539;
+            }
+        }
+    }
+}

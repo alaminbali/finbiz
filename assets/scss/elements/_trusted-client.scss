@@ -56,3 +56,22 @@
         }
     }
 }
+
+// client wrapper two
+.client-bg{
+    background-image: url(../images/client/bg.jpg);
+    .client-two-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            cursor: pointer;
+            transition: .3s;
+            &:hover{
+                transform: scale(1.15);
+            }
+        }
+    }
+}
+
+

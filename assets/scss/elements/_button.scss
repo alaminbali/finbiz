@@ -1,7 +1,6 @@
 
 // button style hear
 
-
 .rts-btn{
     padding: 17px 30px;
     min-width: max-content;
@@ -19,6 +18,26 @@
         &:hover{
             background: var(--color-primary-alta);
             color: #1C2539;
+        }
+    }
+    &.btn-primary-3{
+        background: var(--color-primary-3);
+        color: #fff;
+        &.transparent{
+            background: transparent;
+            border: 1px solid #FFFFFF;
+        }
+        &:hover{
+            background: var(--color-primary-alta);
+            color: #1C2539;
+        }
+    }
+    &.btn-secondary-3{
+        background: #fff;
+        color: var(--color-primary-3);
+        &:hover{
+            background: #f64a0026;
+            color: #fff;
         }
     }
     &.btn-primary-alta{
@@ -62,6 +81,35 @@
     }
 }
 
+button{
+    &.menu{
+        &.rts-btn{
+            &.btn-primary-3-menu{
+                max-width: max-content;
+                background: #F7F7F7;
+                padding: 19px;
+                margin-bottom: -1px;
+                position: relative;
+                .menu-dark{
+                    display: block;
+                }
+                .menu-light{
+                    display: none;
+                }
+                &:hover{
+                    background: var(--color-primary-3);
+                    padding: 19px;
+                    .menu-dark{
+                        display: none;
+                    }
+                    .menu-light{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
 
 .rts-read-more{
     font-weight: 600;

@@ -213,3 +213,12 @@
 .thumbnail-faq-four{
     padding-left: 30px;
 }
+
+.home-yellow{
+    .faq-two-inner .title-area-faq .sub,
+    .faq-two-inner .title-area-faq span.sm-title span,
+    .faq-two-inner .faq-accordion-area .accordion .accordion-item .accordion-header button span,
+    .faq-two-inner .faq-accordion-area .accordion .accordion-item .accordion-header button::after{
+        color: var(--color-primary-3);
+    }
+}

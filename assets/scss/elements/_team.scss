@@ -197,3 +197,19 @@
         }
     }
 }
+
+.home-yellow{
+    .team-inner-two .acquaintance-area .header span{
+        color: var(--color-primary-3);
+    }
+    .team-inner-two .acquaintance-area .acquaintance-social a:hover::after{
+        background: var(--color-primary-3);
+    }
+    .progress-wrap svg.progress-circle path{
+        stroke: var(--color-primary-3);
+    }
+    .progress-wrap::after,
+    .progress-wrap:hover::after{
+        border: 2px solid var(--color-primary-3);
+    }
+}
