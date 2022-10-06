@@ -476,6 +476,138 @@ body {
     }
 }
 
+.over_link{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    left: 0;
+    top: 0;
+}
+
+.container-2{
+    max-width: 1680px;
+    margin: auto;
+}
+
+
+
+
+// Home Blue area
+.home-blue{
+    .title-area{
+        position: relative;
+        z-index: 1;
+        &::after{
+            position: absolute;
+            content: "00";
+            left: 50%;
+            transform: translateX(-50%);
+            top: -39%;
+            color: #ffffff;
+            background-color: #000;
+            background-size: 100% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-stroke: 0.5px transparent;
+            font-size: 143px;
+            height: 100%;
+            max-width: max-content;
+            max-height: max-content;
+            font-weight: 900;
+            z-index: -1;
+            display: flex;
+            align-items: center;
+            opacity: 0.35;
+            font-family: var(--font-secondary);
+            z-index: -1;
+        }
+        &.blog{
+            &::after{
+                left: 50%;
+                transform: translateX(-50%);
+                top: -39%;
+                content: "09";
+            }
+        }
+        &.about-company{
+            &::after{
+                left: 7%;
+                transform: translateX(-50%);
+                top: -42%;
+                content: "02";
+            }
+        }
+        &.service-h2{
+            &::after{
+                left: 7%;
+                transform: translateX(-50%);
+                top: -42%;
+                content: "01";
+            }
+        }
+        &.business-case{
+            &::after{
+                left: 50%;
+                transform: translateX(-50%);
+                top: -25%;
+                content: "05";
+            }
+        }
+        &.working-process{
+            &::after{
+                left: 51%;
+                transform: translateX(-50%);
+                top: -42%;
+                content: "03";
+            }
+        }
+        &.service-h2{
+            &::after{
+                left: 8%;
+                transform: translateX(-50%);
+                top: -42%;
+                content: "06";
+            }
+        }
+        &.testimonial-h2{
+            &::after{
+                left: 4%;
+                transform: translateX(-50%);
+                top: -38%;
+                content: "07";
+                color: #121212;
+                background-color: #ffffff6b;
+            }
+        }
+        &.pricing-h2{
+            &::after{
+                left: 50%;
+                transform: translateX(-50%);
+                top: -40%;
+                content: "08";
+            }
+        }
+        span{
+            font-size: 18px;
+            color: #5D666F !important;
+            font-weight: 500 !important;
+        }
+        .title{
+            font-size: 48px;
+            color: #1C2539 !important;
+            font-weight: 700;
+            line-height: 58px;
+        }
+    }
+}
+
+.home-blue{
+    .single-feature-one i{
+        background: var(--color-primary-2);
+    }
+}
+
+
 
 // index-three
 

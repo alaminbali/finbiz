@@ -88,3 +88,16 @@
     transition: all 200ms linear;
 }
 
+
+
+.home-blue{
+	.progress-wrap svg.progress-circle path{
+		stroke: var(--color-primary-2);
+	}
+	.progress-wrap::after{
+		border-color: var(--color-primary-2);
+		box-shadow: 0px 3px 20px 6px #0742e952;
+		color: var(--color-primary-2);
+	}
+}
+
