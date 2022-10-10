@@ -102,7 +102,7 @@
         }
     }
     .single-details{
-        padding: 30px;
+        padding: 28px 30px 27px 30px;
         a{
             .title{
                 margin-bottom: 0px;
@@ -116,6 +116,7 @@
         }
         p{
             color: var(--color-primary);
+            font-size: 16px;
         }
     }
 }

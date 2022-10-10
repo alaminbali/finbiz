@@ -26,7 +26,7 @@
 
 .contact-form-area-one{
     form{
-        margin-top: 35px;
+        margin-top: 45px;
         input{
             height: 55px;
             background: #F7F7F7;
@@ -64,7 +64,11 @@
     }
 }
 
-
+.contact-form-area-one{
+    .pre-title{
+        letter-spacing: 0.1em;
+    }
+}
 
 .contact-map-area-fluid{
     position: relative;
@@ -97,7 +101,7 @@
                 align-items: center;
                 justify-content: space-between;
                 input{
-                    width: 48.5%;
+                    width: 48.8%;
                 }
             }
         }

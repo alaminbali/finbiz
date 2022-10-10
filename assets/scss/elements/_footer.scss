@@ -30,6 +30,7 @@
             .title{
                 color: #fff;
                 margin-bottom: 0;
+                margin-top: -5px;
             }
         }
         .cta-input-arae{
@@ -160,7 +161,7 @@
                         color: #fff;
                         font-weight: 500;
                         font-size: 17px;
-                        line-height: 21px;
+                        line-height: 26px;
                         margin-bottom: 0;
                         transition: var(--transition);
                     }
@@ -176,6 +177,7 @@
                     color: #DF0A0A;
                     display: flex;
                     align-items: center;
+                    margin-top: -1px;
                     i{
                         margin-left: 6px;
                         margin-bottom: -4px;
@@ -205,6 +207,48 @@
         p{
             font-size: 16px;
             color: #fff;
+        }
+    }
+}
+
+
+.support-team{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    border-top: 1px solid #EEEEEE;
+    margin-top: 10px;
+    .thumbnail{
+        display: block;
+        overflow: hidden;
+        border-radius: 20px;
+        img{
+            border-radius: 20px;
+            transition: .3s;
+        }
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .details{
+        margin-left: 15px;
+        a{
+            .title{
+                transition: .3s;
+            }
+        }
+        a{
+            &:hover{
+                .title{
+                    color: var(--color-primary-2);
+                }
+            }
+        }
+        .title{
+            margin-bottom: 0;
+            margin-top: 5px;
         }
     }
 }

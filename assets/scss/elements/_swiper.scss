@@ -37,6 +37,8 @@
     .swiper-wrapper{
         .swiper-slide{
             background-image: url(../images/banner/banner-01.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
             &.two{
               background-image: url(../images/banner/banner-02.jpg);
             }
@@ -45,4 +47,64 @@
             }
         }
     }
+}
+
+
+
+.offwrap {
+  cursor: url(../images/banner/shape/close.png), auto;
+  width: 100%;
+  left: 100%;
+  transition: all 0.8s ease-out 0s;
+  position: fixed;
+  background: #fff;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  opacity: .6;
+  z-index: 222;
+}
+
+
+.swiper.mySwiperh2_Service.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-backface-hidden {
+  padding-bottom: 55px;
+}
+
+.mySwiperh2_Business_Cases{
+  .swiper-slide{
+    border-radius: 20px;
+  }
+}
+
+.mySwiperh2_clients{
+  .swiper-slide{
+    border-radius: 20px;
+  }
+}
+.mySwiperh3_business-case{
+  .swiper-slide{
+    border-radius: 20px;
+  }
+}
+.mySwiperh1_team{
+  .swiper-slide{
+    border-radius: 20px;
+    padding-top: 20px;
+    background: transparent;
+  }
+}
+.mySwiperh1_blog{
+  .swiper-slide{
+    // border-radius: 20px;
+    // padding-top: 20px;
+    background: transparent;
+    text-align: left;
+  }
+}
+.mySwiperh2_banner{
+  .swiper-slide{
+    // border-radius: 20px;
+    // padding-top: 20px;
+    background: transparent;
+  }
 }

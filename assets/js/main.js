@@ -22,24 +22,26 @@
             imJs.stickyHeader();
             imJs.backToTopInit();
             imJs.typeJS();
+            imJs.searchOpton();
+            imJs.menuActive();
         },
         swiperActivation: function (){
           $(document).ready(function() {
             var swiper = new Swiper(".mySwiper", {
-                loop: true,
+                loop: false,
                 loopedSlides: 50,
                 autoHeight: true,
                 shortSwipes: false,
                 longSwipes: false,
-                // effect: 'fade',
-                speed:3000,
+                effect: 'fade',
+                speed:500,
                 autoplay: {
-                    delay: 3000,
+                    delay: 4000,
                 },
-                pagination: {
-                  el: ".swiper-pagination",
-                  dynamicBullets: true,
-                },
+                // pagination: {
+                //   el: ".swiper-pagination",
+                //   dynamicBullets: true,
+                // },
               });
           });
           $(document).ready(function() {
@@ -74,6 +76,165 @@
               navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+              },
+            });
+          });
+          $(document).ready(function() {
+            var swiper = new Swiper(".mySwiperh2_Service", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              slidesPerGroup: 1,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          });
+          $(document).ready(function() {
+            var swiper = new Swiper(".mySwiperh2_Business_Cases", {
+              slidesPerView: 4,
+              spaceBetween: 30,
+              slidesPerGroup: 2,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              autoplay: {
+                delay: 3000,
+              },
+            });
+          });
+          $(document).ready(function() {
+            var swiper = new Swiper(".mySwiperh2_clients", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              slidesPerGroup: 1,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              autoplay: {
+                delay: 3000,
+              },
+            });
+          });
+          $(document).ready(function() {
+            var swiper = new Swiper(".mySwiperh3_business-case", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              slidesPerGroup: 1,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              autoplay: {
+                delay: 3000,
+              },
+            });
+          });
+          $(document).ready(function() {
+            var swiper = new Swiper(".mySwiperh1_team", {
+              slidesPerView: 4,
+              spaceBetween: 30,
+              slidesPerGroup: 1,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              autoplay: {
+                delay: 3000,
+              },
+            });
+          });
+          $(document).ready(function() {
+            var swiper = new Swiper(".mySwiperh1_blog", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              slidesPerGroup: 1,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              autoplay: {
+                delay: 3000,
+              },
+            });
+          });
+          $(document).ready(function() {
+            var swiper = new Swiper(".mySwiperh2_banner", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              slidesPerGroup: 1,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              effect: 'fade',
+              pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              autoplay: {
+                delay: 4000,
+              },
+            });
+          });
+          $(document).ready(function() {
+            var swiper = new Swiper(".mySwiperh3_banner", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              slidesPerGroup: 1,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              // effect: 'fade',
+              pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              autoplay: {
+                delay: 4000,
               },
             });
           });
@@ -365,6 +526,34 @@
             }
           });
         },
+        searchOpton:function(){
+          $(document).on('click', '#search', function () {
+            $(".search-input-area").addClass("show");
+            $("#anywhere-home").addClass("bgshow");
+          });
+          $(document).on('click', '#close', function () {
+            $(".search-input-area").removeClass("show");
+            $("#anywhere-home").removeClass("bgshow");
+          });
+          $(document).on('click', '#anywhere-home', function () {
+            $(".search-input-area").removeClass("show");
+            $("#anywhere-home").removeClass("bgshow");
+          });
+        },
+        menuActive:function(){
+          $(document).on('click', '#menu-btn', function () {
+            $("#side-bar").addClass("show");
+            $("#anywhere-home").addClass("bgshow");
+          });
+          $(document).on('click', '.close-icon-menu', function () {
+            $("#side-bar").removeClass("show");
+            $("#anywhere-home").removeClass("bgshow");
+          });
+          $(document).on('click', '#anywhere-home', function () {
+            $("#side-bar").removeClass("show");
+            $("#anywhere-home").removeClass("bgshow");
+          });
+        }
     }
   
     imJs.m();

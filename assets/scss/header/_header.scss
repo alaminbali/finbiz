@@ -11,7 +11,7 @@
                 padding: 11px 0;
                 display: block;
                 color: #fff;  
-                margin-right: 95px; 
+                margin-right: 50px; 
                 font-size: 14px;  
                 position: relative;
                 transition: var(--transition);
@@ -38,7 +38,7 @@
                 width: 1px;
                 height: 21px;
                 background: #fff;
-                right: 45px;
+                right: 25px;
                 top: 50%;
                 transform: translateY(-50%);
             }
@@ -87,7 +87,7 @@
             }
         }
         .social-wrapper-one{
-            margin-left: 50px;
+            margin-left: 30px;
             position: relative;
             a{
                 i{
@@ -109,7 +109,7 @@
                 content: '';
                 width: 1px;
                 height: 21px;
-                left: -36px;
+                left: -25px;
                 top: 50%;
                 transform: translateY(-50%);
                 background: #ffffff;
@@ -250,7 +250,6 @@
 .header-three{
     position: absolute;
     width: 100%;
-    z-index: 5; 
     .main-header .nav-main ul li a{
         padding: 42px 0;
     }
@@ -272,6 +271,7 @@
                 color: var(--color-primary-3); 
                 display: flex;
                 align-items: center;
+                margin-left: 5px;
                 i{
                     transition: .3s;
                     margin-left: 5px;
@@ -631,4 +631,113 @@
             }
         }
     }
+}
+
+
+.search-input-area.show {
+    visibility: visible;
+    transform: inherit;
+    opacity: 1;
+}
+
+.search-input-area{
+    transition: all 500ms ease;
+    visibility: hidden;
+    transform: translateY(-100%);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 70px 0;
+    background: white;
+    box-shadow: 1px 1px 50px rgb(0 0 0 / 46%);
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .search-input-inner {
+        display: flex;
+        align-items: center;
+        position: relative;
+        .input-div{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            input{
+                background: #F7F7F7;
+                border-radius: 5px;
+                height: 55px;
+            }
+            button{
+                max-width: max-content;
+                padding: 17.5px;
+                background: var(--color-primary);
+                display: flex;
+                color: #fff;
+                align-items: center;
+                justify-content: center;
+                display: block;
+                margin-left: -9px;
+                border-radius: 0 5px 5px 0;
+            }
+        }
+        .search-close-icon{
+            cursor: pointer;
+            position: absolute;
+            right: -21%;
+            top: -42px;
+            i{
+                position: relative;
+                z-index: 1;
+                color: var(--color-primary);
+                transition: .3s;
+                &::after{
+                    position: absolute;
+                    height: 45px;
+                    width: 45px;
+                    content: '';
+                    border-radius: 5px;
+                    background: #F7F7F7;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    z-index: -1;
+                    transition: .3s;
+                }
+            }
+            &:hover{
+                i{
+                    color: #fff;
+                    &::after{
+                        background: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#anywhere-home{
+    cursor: url(../images/banner/shape/close.png), auto;
+    background: #0e1013;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 500ms ease-in-out;
+    pointer-events: none;
+    z-index: 50;
+    &.bgshow{
+        background: #0e1013;
+        opacity: 70%;
+        visibility: visible;
+        pointer-events: visible;
+        z-index: 60;
+    }
+}
+li.has-droupdown {
+    margin-right: 48px !important;
 }

@@ -127,6 +127,7 @@ body {
         font-size: 16px;
         font-weight: 600;
         text-transform: uppercase;
+        margin-top: -5px;
     }
     .title{
         margin-bottom: 24px;
@@ -136,6 +137,16 @@ body {
             content: 'Services';
             left: 50%;
             transform: translateX(-50%);
+        }
+    }
+    &.pricing-planes{
+        &::after{
+            content: "price plans";
+            left: 50%;
+            transform: translateX(-50%);
+            width: max-content;
+            height: 168px;
+            top: -70%;
         }
     }
     &.service-four{
@@ -427,6 +438,7 @@ body {
             .title{
                 margin-bottom: 0;
                 transition: .3s;
+                line-height: 32px;
             }
             &:hover{
                 .title{
@@ -563,10 +575,10 @@ body {
         }
         &.service-h2{
             &::after{
-                left: 8%;
+                left: 3%;
                 transform: translateX(-50%);
                 top: -42%;
-                content: "06";
+                content: "01";
             }
         }
         &.testimonial-h2{

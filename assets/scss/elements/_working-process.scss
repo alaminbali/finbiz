@@ -102,6 +102,22 @@
         position: relative;
         margin-bottom: 120px;
         margin-top: 30px;
+        .ratio-area{
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            .ratio{
+                color: #fff;
+                margin-bottom: 0px;
+                font-size: 40px;
+                font-weight: 700;
+            }
+            span{
+                font-size: 18px;
+                font-weight: 500;
+                color: #fff;
+            }
+        }
         img{
             border-radius: 20px;
         }

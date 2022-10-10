@@ -40,7 +40,7 @@
         color: #1C2539;
         text-transform: uppercase;
         font-size: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-family: var(--font-secondary);
         letter-spacing: 1px;
         span{
@@ -51,11 +51,13 @@
     .title{
         font-weight: 700;
         line-height: 82px;
-        margin-bottom: 40px;
+        margin-bottom: 23px;
+        font-size: 60px;
         span{
             font-style: italic;
             color: #DF0A0A;
             font-weight: 300;
+            font-size: 70px;
         }
     }
     p{
@@ -63,7 +65,7 @@
     }
     .rts-btn{
         display: block;
-        margin-top: 40px;
+        margin-top: 43px;
         max-width: max-content;
     }
 }
@@ -74,22 +76,69 @@
     .swiper-slide-active{
         .pre-title{
             animation: fadeInUp 1.5s;
-            animation-delay: 1.6s;
+            animation-delay: 0s;
         }
         .title{
             animation: fadeInUp 1.5s;
-            animation-delay: 1.6s;
+            animation-delay: 0s;
         }
         p{
             &.disc{
                 animation: fadeInUp 2s;
-                animation-delay: 1.6s;
+                animation-delay: 0s;
             }
         }
         a{
-            .rts-btn{
+            &.rts-btn{
                 animation: fadeInUp 2.5s;
-                animation-delay: 1.6s;
+                animation-delay: 0s;
+            }
+        }
+    }
+}
+
+.rts-banner-area-two{
+    .swiper-slide-active{
+        .wrapper{
+            .sub{
+                animation: fadeInUp 1.5s;
+                animation-delay: 0s;
+                display: block;
+            }
+            .title{
+                animation: fadeInUp 1.5s;
+                animation-delay: 0s;
+            }
+            a{
+                &.rts-btn{
+                    animation: fadeInUp 2.5s;
+                    animation-delay: 0s;
+                }
+            }
+        }
+    }
+}
+.banner-three{
+    .swiper-slide-active{
+        .banner-three-innerr{
+            .subtitle-banner{
+                animation: fadeInUp 1.5s;
+                animation-delay: 0s;
+                display: block;
+            }
+            .title{
+                animation: fadeInUp 1.5s;
+                animation-delay: 0s;
+            }
+            .disc{
+                animation: fadeInUp 1.5s;
+                animation-delay: 0s;
+            }
+            a{
+                &.rts-btn{
+                    animation: fadeInUp 2.5s;
+                    animation-delay: 0s;
+                }
             }
         }
     }
@@ -103,6 +152,13 @@
     // height: 100vh;
     position: relative;
     z-index: 1;
+    width: 100%;
+    &.slide-2{
+        background-image: url(../images/banner/banner-08.jpg);
+    }
+    &.slide-3{
+        background-image: url(../images/banner/banner-09.jpg);
+    }
     &::after{
         position: absolute;
         height: 100%;
@@ -113,43 +169,52 @@
         background: #050a15b3;
         z-index: -1;
     }
-    &::before{
-        position: absolute;
-        content: '';
-        background-image: url(../images/banner/shape/04.png);
-        height: 100%;
-        width: 650px;
-        background-size: cover;
-        right: 0;
-        bottom: 0;
-    }
+    // &::before{
+    //     position: absolute;
+    //     content: '';
+    //     background-image: url(../images/banner/shape/04.png);
+    //     height: 100%;
+    //     width: 650px;
+    //     background-size: cover;
+    //     right: 0;
+    //     bottom: 0;
+    // }
 }
 
 .banner-three-inner{
     padding: 300px 0 100px 0;
     max-width: 100%;
     position: relative;
+    z-index: 2;
+    text-align: left;
     &::after{
         position: absolute;
         content: "Solution Model";
         left: 15%;
+        line-height: 198px;
         width: 100%;
         top: 36%;
-        color: #f1e2e200;
-        background-color: #00000038;
-        background-size: 100% 100%;
+        font-size: 100px;
+        font-weight: 800;
+        /* Warning: no fallback */
+        // background: -webkit-linear-gradient(-90deg, #ffffff 50%, #ffffff63 60%, #ffffff00 100%);
         -webkit-background-clip: text;
-        -webkit-text-stroke: 0.5px #ffffff;
+        -webkit-text-stroke: 2px transparent;
+        // color: #291e1e;
         font-size: 150px;
         height: 128px;
         max-height: max-content;
         min-width: max-content;
-        font-weight: 900;
+        font-weight: 700;
         z-index: 0;
         display: flex;
         align-items: center;
-        opacity: .30;
+        opacity: .25;
         font-family: var(--font-secondary);
+        z-index: -1;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(255, 255, 255);
     }
     .subtitle-banner{
         color: #fff;
@@ -198,7 +263,15 @@
     height: 850px;
     background-repeat: no-repeat;
     position: relative;
+    background-position: center;
     background-size: cover;
+    width: 100%;
+    &.slide-2{
+        background-image: url(../images/banner/banner-06.png);
+    }
+    &.slide-3{
+        background-image: url(../images/banner/banner-07.png);    
+    }
 }
 
 .banner-two-content{
@@ -234,12 +307,51 @@
                 font-size: 16px;
                 display: block;
                 max-width: max-content;
-                margin: 60px auto 0 auto;
+                margin: 45px auto 0 auto;
                 &:hover{
                     background: var(--color-primary-2);
                     color: #ffff;
                 }
             }
         }
+    }
+}
+
+
+.rts-banner-one{
+    .swiper-wrapper{
+        .swiper-slide{
+            .banner-one-inner{
+                position: relative;
+                z-index: 1;
+                .shape-img{
+                    &.one{
+                        position: absolute;
+                        right: 40px;
+                        bottom: 100px;
+                        height: 436px;
+                        width: 436px;
+                        z-index: -1;
+                        animation: rotateIt2 25s linear infinite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.banner-three{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(../images/banner/shape/04.png);
+        height: 100%;
+        width: 650px;
+        background-size: cover;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
     }
 }

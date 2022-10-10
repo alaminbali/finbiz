@@ -43,6 +43,7 @@
         animation: jump-1 2s linear infinite;
     }
     .icon{
+        margin-top: 48px;
         img{
             max-width: 100px;
         }
@@ -55,12 +56,14 @@
     span{
         color: #fff;
         font-size: 16px;
+        font-weight: 500;
     }
     p{
         &.disc{
             margin-top: 16px;
             color: #B3B7C1;
-            margin-bottom: 50px;
+            margin-bottom: 45px;
+            line-height: 26px;
         }
     }
 }

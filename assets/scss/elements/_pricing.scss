@@ -74,7 +74,7 @@
         }
     }
     .pricing-header-start{
-        padding-bottom: 24px;
+        padding-bottom: 7px;
         border-bottom: 1px solid #EAE2E2;
     }
     .pricing-body{
@@ -118,7 +118,9 @@
             &.rts-btn{
                 display: block;
                 max-width: max-content;
-                margin-top: 50px;
+                margin-top: 42px;
+                font-weight: 700;
+                padding: 17px 40px;
             }
         }
     }
@@ -165,5 +167,22 @@
     &.margin-dec-padding-con{
         margin-top: -222px;
         padding-top: 340px;
+    }
+}
+
+
+.pricing-h2{
+    p{
+        &.offer{
+            font-size: 18px;
+            font-weight: 400;
+            color: #5D666F;
+            margin-bottom: 25px;
+            margin-top: 40px;
+            span{   
+                font-weight: 700 !important;
+                color: var(--color-primary-2) !important;
+            }
+        }
     }
 }

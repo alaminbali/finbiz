@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finzib Project details (Business Consultant)</title>
+    <title>Finbiz Project details (Business Consultant)</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
     <link rel="stylesheet" href="assets/css/plugins/fontawesome-5.css">
@@ -101,13 +101,24 @@
                                             <li><a href="blog-details.html">Blog Details</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contactus.html">Contacts</a></li>
+                                    <li><a href="contactus.html">Contact</a></li>
                                 </ul>
                             </nav>
                             <div class="button-area">
-                                <button class="rts-btn btn-primary-alta"><i class="far fa-search"></i></button>
+                                <button id="search" class="rts-btn btn-primary-alta"><i class="far fa-search"></i></button>
+                                <div class="search-input-area">
+                                    <div class="container">
+                                        <div class="search-input-inner">
+                                            <div class="input-div">
+                                                <input id="searchInput1" class="search-input" type="text" placeholder="Search by keyword or #">
+                                                <button><i class="far fa-search"></i></button>
+                                            </div>
+                                            <div id="close" class="search-close-icon"><i class="far fa-times"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <a href="#" class="rts-btn btn-primary ml--20">Get Quote</a>
-                                <button class="menu rts-btn btn-primary-alta ml--20">
+                                <button id="menu-btn" class="menu rts-btn btn-primary-alta ml--20">
                                     <img class="menu-dark" src="assets/images/icon/menu.png" alt="Menu-icon">
                                     <img class="menu-light" src="assets/images/icon/menu-light.png" alt="Menu-icon">
                                 </button>
@@ -119,6 +130,66 @@
         </div>
     </header>
     <!-- End header area -->
+
+    <div id="side-bar" class="side-bar">
+        <button class="close-icon-menu"><i class="far fa-times"></i></button>
+
+
+        <!-- inner menu area start -->
+        <div class="rts-sidebar-menu-desktop">
+            <a class="logo-1" href="#"><img class="logo" src="assets/images/logo/logo-1.svg" alt="finbiz_logo"></a>
+            <a class="logo-2" href="#"><img class="logo" src="assets/images/logo/logo-4.svg" alt="finbiz_logo"></a>
+            <a class="logo-3" href="#"><img class="logo" src="assets/images/logo/logo-3.svg" alt="finbiz_logo"></a>
+            <p class="disc">
+                We must explain to you how all seds this mistakens idea denouncing pleasures and praising account.
+            </p>
+
+            <div class="get-in-touch">
+                <!-- title -->
+                <div class="h6 title">Get In Touch</div>
+                <!-- title End -->
+                <div class="wrapper">
+                    <!-- single -->
+                    <div class="single">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="#">+8801234566789</a>
+                    </div>
+                    <!-- single ENd -->
+                    <!-- single -->
+                    <div class="single">
+                        <i class="fas fa-envelope"></i>
+                        <a href="#">example@gmail.com</a>
+                    </div>
+                    <!-- single ENd -->
+                    <!-- single -->
+                    <div class="single">
+                        <i class="fas fa-globe"></i>
+                        <a href="#">www.webexample.com</a>
+                    </div>
+                    <!-- single ENd -->
+                    <!-- single -->
+                    <div class="single">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="#">13/A, New Pro State, NYC</a>
+                    </div>
+                    <!-- single ENd -->
+                </div>
+                <div class="social-wrapper-two menu">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
+                </div>
+            </div>
+        </div>
+        <!-- inner menu area End -->
+
+    </div>
+
+
+
+    <div id="anywhere-home"></div>
     <!-- ENd Header Area -->
 
     <!-- start breadcrumb area -->
@@ -223,7 +294,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row g-5 mb--50">
+            <div class="row g-5 mb--60">
                 <div class="col-lg-4">
                     <div class="thumbnail">
                         <img src="assets/images/product/d-01.jpg" alt="">
@@ -242,12 +313,12 @@
             </div>
             <div class="row g-5">
                 <div class="col-12">
-                    <h2 class="title">The Challenge Of Project</h2>
+                    <h2 class="title mb--0">The Challenge Of Project</h2>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="single-project-details-challenge">
                         <div class="icon">
-                            <i class="far fa-check"></i>
+                            <i class="far fa-check-circle"></i>
                         </div>
                         <p class="details">
                             The housekeepers we hired are professionals who take pride in doing
@@ -256,7 +327,7 @@
                     </div>
                     <div class="single-project-details-challenge">
                         <div class="icon">
-                            <i class="far fa-check"></i>
+                            <i class="far fa-check-circle"></i>
                         </div>
                         <p class="details">
                             The housekeepers we hired are professionals who take pride in doing
@@ -265,7 +336,7 @@
                     </div>
                     <div class="single-project-details-challenge">
                         <div class="icon">
-                            <i class="far fa-check"></i>
+                            <i class="far fa-check-circle"></i>
                         </div>
                         <p class="details">
                             The housekeepers we hired are professionals who take pride in doing
@@ -276,7 +347,7 @@
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="single-project-details-challenge">
                         <div class="icon">
-                            <i class="far fa-check"></i>
+                            <i class="far fa-check-circle"></i>
                         </div>
                         <p class="details">
                             The housekeepers we hired are professionals who take pride in doing
@@ -285,7 +356,7 @@
                     </div>
                     <div class="single-project-details-challenge">
                         <div class="icon">
-                            <i class="far fa-check"></i>
+                            <i class="far fa-check-circle"></i>
                         </div>
                         <p class="details">
                             The housekeepers we hired are professionals who take pride in doing
@@ -294,7 +365,7 @@
                     </div>
                     <div class="single-project-details-challenge">
                         <div class="icon">
-                            <i class="far fa-check"></i>
+                            <i class="far fa-check-circle"></i>
                         </div>
                         <p class="details">
                             The housekeepers we hired are professionals who take pride in doing
@@ -413,11 +484,11 @@
                                 </div>
                                 <div class="post-right">
                                     <p> <i class="fal fa-clock"></i> 15th April, 2022</p>
-                                    <a href="#">
+                                    <a href="blog-details.html">
                                         <h6 class="title">Best Business Ideas For
                                             Getting Solution</h6>
                                     </a>
-                                    <a class="red-more" href="#">Read More<i class="far fa-arrow-right"></i></a>
+                                    <a class="red-more" href="blog-details.html">Read More<i class="far fa-arrow-right"></i></a>
                                 </div>
                             </div>
                             <!-- single post End -->
@@ -428,11 +499,11 @@
                                 </div>
                                 <div class="post-right">
                                     <p> <i class="fal fa-clock"></i> 15th April, 2022</p>
-                                    <a href="#">
+                                    <a href="blog-details.html">
                                         <h6 class="title">Best Business Ideas For
                                             Getting Solution</h6>
                                     </a>
-                                    <a class="red-more" href="#">Read More<i class="far fa-arrow-right"></i></a>
+                                    <a class="red-more" href="blog-details.html">Read More<i class="far fa-arrow-right"></i></a>
                                 </div>
                             </div>
                             <!-- single post End -->

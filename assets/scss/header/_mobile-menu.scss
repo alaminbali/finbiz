@@ -1,0 +1,197 @@
+
+// mobile menue style hear
+
+.side-bar{
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: -100%;
+    width: 365px;
+    padding: 40px 30px;
+    padding-top: 50px;
+    height: 100%;
+    display: block;
+    background-color: white;
+    backdrop-filter: blur(7px);
+    z-index: 1900;
+    transition: all 600ms ease;
+    box-shadow: -5px 0 20px -5px rgb(149 22 22 / 12%);
+    // overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    &.show{
+        right: 0;
+    }
+}
+
+.side-bar{
+    button{
+        // max-width: max-content;
+        height: 50px;
+        width: 50px;
+        border-radius: 5px;
+        background: var(--color-primary);
+        i{
+            color: #fff;
+        }
+    }
+}
+
+.rts-sidebar-menu-desktop{
+    .logo{
+        margin-top: 50px;
+    }
+    p{
+        &.disc{
+            margin-top: 30px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+    .get-in-touch{
+        .title{
+            margin-bottom: 30px;
+        }
+        .wrapper{
+            .single{
+                i{
+                    color: var(--color-primary);
+                    margin-right: 10px;
+                    margin-bottom: 15px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+                a{
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}
+
+.social-wrapper-two{
+    &.menu{
+        margin-top: 50px;
+        margin-left: 12px;
+    }
+    a{
+        margin-right: 40px;
+        z-index: 1;
+        position: relative;
+        i{
+            color: #fff;
+            transition: .3s;
+            font-size: 16px;
+        }
+        &::after{
+            position: absolute;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            content: '';
+            z-index: -1;
+            background: var(--color-primary);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: .3s;
+        }
+        &:hover{
+            i{
+                color: var(--color-primary);
+            }
+            &::after{
+                background: #ffecec;
+                box-shadow: 0px 10px 30px rgb(33 5 5 / 5%);
+            }
+        }
+    }
+}
+
+.logo-1{
+    display: block;
+}
+.logo-2{
+    display: none;
+}
+.logo-3{
+    display: none;
+}
+
+// dextop menu
+.home-blue{
+    .side-bar button{
+        background: var(--color-primary-2);
+    }
+    .logo-1{
+        display: none;
+    }
+    .logo-2{
+        display: block;
+    }
+    .rts-sidebar-menu-desktop .get-in-touch .wrapper .single i{
+        color: var(--color-primary-2);
+    }
+    .social-wrapper-two a::after{
+        background: var(--color-primary-2);
+        color: #fff;
+    }
+    .social-wrapper-two a{
+        &:hover{
+            color: var(--color-primary-2);
+            i{
+                color: var(--color-primary-2);
+            }
+            &::after{
+                background: #8e8f9314;
+                color: var(--color-primary-2);
+            }
+        }
+    }
+    .rts-sidebar-menu-desktop .get-in-touch .wrapper .single a{
+        &:hover{
+            color: var(--color-primary-2);
+        }
+    }
+}
+.home-yellow{
+    .logo-1{
+        display: none;
+    }
+    .logo-2{
+        display: none;
+    }
+    .logo-3{
+        display: block;
+    }
+    .side-bar button{
+        background: var(--color-primary-3);
+    }
+    .rts-sidebar-menu-desktop .get-in-touch .wrapper .single i{
+        color: var(--color-primary-3);
+    }
+    .social-wrapper-two a::after{
+        background: var(--color-primary-3);
+        color: #fff;
+    }
+    .social-wrapper-two a{
+        &:hover{
+            color: var(--color-primary-3);
+            i{
+                color: var(--color-primary-3);
+            }
+            &::after{
+                background: #8e8f9314;
+                color: var(--color-primary-3);
+            }
+        }
+    }
+    .rts-sidebar-menu-desktop .get-in-touch .wrapper .single a{
+        &:hover{
+            color: var(--color-primary-3);
+        }
+    }
+}
+
+
