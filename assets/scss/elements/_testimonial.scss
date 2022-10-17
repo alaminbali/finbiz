@@ -149,6 +149,9 @@
     background: #fff;
     border-radius: 20px;
     box-shadow: 0px 11px 30px rgba(0, 0, 0, 0.02);
+    @media #{$large-mobile} {
+        padding: 20px;
+    }
     .test-header{
         display: flex;
         align-items: center;
@@ -293,6 +296,9 @@
         background: #fff;
         padding: 60px;
         transition: .3s;
+        @media #{$smlg-device} {
+            padding: 30px;
+        }
         &.active{
             border: 2px solid var(--color-primary-2);
             box-shadow: 0px 17px 39px rgba(6, 33, 101, 0.13);
@@ -316,6 +322,7 @@
                 font-weight: 700;
                 font-size: 48px;
                 line-height: 64px;
+                min-width: max-content;
             }
             span{
                 margin-top: 10px;

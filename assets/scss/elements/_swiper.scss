@@ -39,6 +39,7 @@
             background-image: url(../images/banner/banner-01.jpg);
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center;
             &.two{
               background-image: url(../images/banner/banner-02.jpg);
             }
@@ -95,16 +96,18 @@
 }
 .mySwiperh1_blog{
   .swiper-slide{
-    // border-radius: 20px;
-    // padding-top: 20px;
     background: transparent;
     text-align: left;
+   
   }
 }
 .mySwiperh2_banner{
   .swiper-slide{
-    // border-radius: 20px;
-    // padding-top: 20px;
     background: transparent;
   }
+}
+
+
+.mySwiperh3_team{
+  padding-bottom: 109px;
 }

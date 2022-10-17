@@ -90,7 +90,50 @@ body {
 }
 
 .bg-footer-one{
-    background-image: url(../images/footer/footer-bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #0E1422;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url(../images/footer/h1-shape/01.svg);
+        height: 450px;
+        width: 450px;
+        right: -3%;
+        background-repeat: no-repeat;
+        bottom: -5%;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url(../images/footer/h1-shape/02.png);
+        height: 800px;
+        width: 823px;
+        left: -16%;
+        background-position: center;
+        bottom: -13%;
+        background-size: cover;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+    .bg-shape-f1{
+        position: relative;
+        z-index: 1;
+        &::after{
+            position: absolute;
+            background-image: url(../images/footer/h1-shape/03.png);
+            content: '';
+            height: 500px;
+            width: 523px;
+            left: -25%;
+            top: -20%;
+            z-index: -1;
+            background-repeat: no-repeat;
+        }
+    }
 }
 
 
@@ -119,15 +162,30 @@ body {
         align-items: center;
         opacity: 0.35;
         font-family: var(--font-secondary);
+        @media #{$smlg-device} {
+            font-size: 90px;
+        }
+        @media #{$md-layout} {
+            font-size: 90px;
+        }
+        @media #{$sm-layout} {
+            font-size: 70px;
+        }
+        @media #{$small-mobile} {
+            font-size: 50px;
+        }
     }
     p.pre-title{
         color: var(--color-primary);
-        margin-bottom: 10px;
+        margin-bottom: 0;
         font-family: var(--font-secondary);
         font-size: 16px;
         font-weight: 600;
         text-transform: uppercase;
         margin-top: -5px;
+        @media #{$small-mobile} {
+            font-size: 14px;
+        }
     }
     .title{
         margin-bottom: 24px;
@@ -227,7 +285,7 @@ body {
         &::after{
             position: absolute;
             content: "Hello";
-            left: 12%;
+            left: 18%;
             top: -39%;
             color: #8b868600;
             background-color: #241e1e00;
@@ -244,6 +302,9 @@ body {
             align-items: center;
             opacity: 0.35;
             font-family: var(--font-secondary);  
+            @media #{$large-mobile} {
+                font-size: 100px;
+            }
         }
     }
     &.contact-fluid{
@@ -253,7 +314,7 @@ body {
             transform: translateX(-50%);
             z-index: -1;
             height: 109px;
-            top: -29%;
+            top: -40%;
             min-width: max-content;
         }
     }
@@ -273,6 +334,9 @@ body {
             height: 70px;
             width: 1px;
             background: #EBEBEB;
+            @media #{$smlg-device} {
+                display: none;
+            }
         }
         .founder-details{
             a{
@@ -289,7 +353,7 @@ body {
             span{
                 font-size: 14px;
                 color: var(--color-primary);
-                font-weight: 600;
+                font-weight: 400;
             }
         }
         a{
@@ -325,6 +389,7 @@ body {
             margin-bottom: 0;
             margin-top: 2px;
             transition: .3s;
+            min-width: max-content;
             &:hover{
                 color: var(--color-primary);
             }
@@ -384,6 +449,9 @@ body {
             background: #1C2539;
             width: 100%;
             left: 0;
+            @media #{$sm-layout} {
+                padding-left: 15px;
+            }
             .user{
                 margin-right: 25px;
                 i{
@@ -434,6 +502,9 @@ body {
     }
     .blog-body{
         padding: 30px;
+        @media #{$sm-layout} {
+            padding: 15px;
+        }
         a{
             .title{
                 margin-bottom: 0;
@@ -454,6 +525,7 @@ body {
 .social-three-wrapper{
     display: flex;
     align-items: center;
+    padding-left: 0;
     li{
         list-style: none;
         margin: 0 21px;
@@ -547,6 +619,11 @@ body {
                 transform: translateX(-50%);
                 top: -42%;
                 content: "02";
+                @media #{$sm-layout} {
+                    left: 18%;
+                    transform: translateX(-50%);
+                    top: -27%;
+                }
             }
         }
         &.service-h2{
@@ -579,6 +656,9 @@ body {
                 transform: translateX(-50%);
                 top: -42%;
                 content: "01";
+                @media #{$sm-layout} {
+                    left: 18%;
+                }
             }
         }
         &.testimonial-h2{

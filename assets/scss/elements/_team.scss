@@ -3,7 +3,7 @@
 
 .bg-team{
     background-image: url(../images/team/bg-01.jpg);
-    height: 1052px;
+    height: 1029px;
 }
 .bg-team-color{
     background: #F6F6F6;
@@ -148,11 +148,23 @@
         border-radius:0 15px 15px 15px;
         box-shadow: 0px 4px 27px #00000012;
         text-align: center;
+        @media #{$md-layout} {
+            bottom: 0;
+        }
+        @media #{$sm-layout} {
+            bottom: 0;
+        }
         .header{
             padding: 30px 82px 22px 82px;
             border-bottom: 1px solid #F0F0F0;
+            @media #{$smlg-device} {
+                padding: 20px 62px;
+            }
             .title{
                 margin-bottom: 5px;
+                @media #{$smlg-device} {
+                    font-size: 20px;
+                }
             }
             span{
                 color: var(--color-primary);
@@ -163,6 +175,10 @@
         .acquaintance-social{
             padding: 27px 84px 36px 84px;
             margin-right: -30px;
+            @media #{$smlg-device} {
+                padding: 20px 62px;
+                margin-right: -30px;
+            }
             a{
                 position: relative;
                 z-index: 1;
@@ -212,5 +228,11 @@
     .progress-wrap::after,
     .progress-wrap:hover::after{
         border: 2px solid var(--color-primary-3);
+    }
+}
+
+.details-thumb{
+    img{
+        width: 100%;
     }
 }

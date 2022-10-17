@@ -21,6 +21,12 @@
         background-repeat: no-repeat;
         top: 32%;
         animation: jump-1 8s linear infinite;
+        @media #{$sm-layout} {
+            right: -15%;
+        }
+        @media #{$small-mobile} {
+            right: -32%;
+        }
     }
     &::before{
         content: '';
@@ -32,6 +38,15 @@
         top: 60%;
         right: -2%;
         animation: rotateIt 10s linear infinite;
+        z-index: -1;
+        @media #{$md-layout} {
+            top: 76%;
+        }
+        @media #{$sm-layout} {
+            top: 76%;
+            height: 100px;
+            width: 100px;
+        }
     }
 }
 
@@ -41,6 +56,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 5px;
+        align-items: flex-start;
         i{
             padding: 4px;
             background: var(--color-primary);
@@ -48,6 +64,7 @@
             color: #fff;
             font-size: 12px;
             margin-right: 15px;
+            margin-top: 5px;
         }
         p{
             &.details{
@@ -119,6 +136,9 @@
         .img-1{
             border-top: 10px solid var(--color-primary);
             padding-top: 10px;
+            @media #{$sm-layout} {
+                width: 65%;
+            }
         }
         .img-over{
             position: absolute;
@@ -126,12 +146,18 @@
             right: 0;
             top: 0;
             animation: jump-2 5s linear infinite;
+            @media #{$sm-layout} {
+                width: 50%;
+            }
         }
         .goal-button-wrapper{
             .vedio-icone{
                 background: #fff;
                 padding: 65px;
                 border-radius: 50%;
+                @media #{$small-mobile} {
+                    padding: 53px;
+                }
                 .video-play-button{
                     &::after{
                         background: var(--color-primary);
@@ -143,12 +169,21 @@
             }
             position: absolute;
             bottom: -2%;
-            right: 29%;       
+            right: 29%;     
+            @media #{$large-mobile} {
+                right: 24%;
+            }  
         }
     }
 }
 .about-progress-inner{
     padding-left: 30px;
+    @media #{$md-layout} {
+        padding-left: 0;
+    }
+    @media #{$sm-layout} {
+        padding-left: 0;
+    }
     .title-area{
         span{
             color: var(--color-primary);
@@ -164,6 +199,12 @@
         .rts-progress-one-wrapper{
             padding: 40px;
             background: #F7F7F7;
+            @media #{$sm-layout} {
+                padding: 25px;
+            }
+            @media #{$small-mobile} {
+                padding: 15px;
+            }
             .meter{
                 background: #fff;
                 height: 15px;
@@ -229,8 +270,25 @@
             line-height: 65px;
             text-transform: uppercase;
             margin-top: 20px;
+            @media #{$smlg-device} {
+                font-size: 44px;
+            }
+            @media #{$sm-layout} {
+                font-size: 36px;
+                line-height: 55px;
+            }
+            @media #{$small-mobile} {
+                font-size: 24px;
+                line-height: 44px;
+            }
             span{
                 font-size: 48px;
+                @media #{$sm-layout} {
+                    font-size: 36px;
+                }
+                @media #{$sm-layout} {
+                    font-size: 24px;
+                }
                 span{
                     color: var(--color-primary-3);
                 }
@@ -239,6 +297,11 @@
     }
 }
 .about-three-thumbnail-left{
+    img{
+        @media #{$md-layout} {
+            width: 100%;
+        }
+    }
     position: relative;
     &::after{
         position: absolute;
@@ -255,6 +318,11 @@
         top: 13%;
         left: -28%;
         animation: jump-1 5s linear infinite;
+        @media #{$smlg-device} {
+            left: -11%; 
+            width: 65%;
+            top: 14%;
+        }
     }
     .vedio-icone{
         position: absolute;
@@ -265,7 +333,11 @@
         height: auto;
         object-fit: contain;
         cursor: auto;
-        a{
+        @media #{$small-mobile} {
+            right: -8%;
+            bottom: -17%;
+        }
+        span{
             position: relative;
             height: auto;
             width: auto;
@@ -273,6 +345,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
             &::after{
                 display: none;
             }
@@ -312,6 +385,12 @@
 
 .solution-wrapper-right{
     margin-left: -60px;
+    @media #{$sm-layout} {
+        margin-left: -20px;
+    }
+    @media #{$large-mobile} {
+        margin-left: 0;
+    }
 }
 
 .single-business-solution{  
@@ -344,6 +423,10 @@
     margin-top: 65px;
     display: flex;
     align-items: center;
+    @media #{$sm-layout} {
+        align-items: inherit;
+        flex-direction: column;
+    }
     .user-wrapper{
         display: flex;
         align-items: center;
@@ -369,11 +452,21 @@
         }
     }
     .reviews{
+        @media #{$sm-layout} {
+            margin-top: 50px;
+        }
         .title{
             margin-bottom: 0px;
         }
         span{
             color: var(--color-primary-3);
+        }
+    }
+    .rts-btn{
+        @media #{$sm-layout} {
+            max-width: max-content;
+            margin-left: 0 !important;
+            margin-top: 20px;
         }
     }
 }
@@ -382,19 +475,42 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    @media #{$sm-layout} {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .title{
         margin-bottom: 0;
         color: #fff;
+        @media #{$md-layout} {
+            font-size: 18px;
+        }
         a{
             color: var(--color-primary-3);
         }
     }
     a{
         margin-left: auto;
+        @media #{$sm-layout} {
+            margin-left: 0;
+            margin-top: 20px;
+        }
     }
 }
 
 
+
+.contoler-company{
+    display: flex;
+    @media #{$sm-layout} {
+        flex-direction: column;
+    }
+    .tab-content{
+        @media #{$sm-layout} {
+            margin-top: 30px;
+        }
+    }
+}
 
 
 .about-company-wrapper{
@@ -404,6 +520,13 @@
             font-size: 18px;
             margin-bottom: 60px;
             line-height: 28px;
+            @media #{$sm-layout} {
+                font-size: 16px;
+                margin-bottom: 25px;
+                br{
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -416,6 +539,9 @@
         background: #fff;
         text-align: left;
         min-width: max-content;
+        @media #{$sm-layout} {
+            padding: 10px;
+        }
         button{
             background: transparent !important;
             color: #5D666F;
@@ -424,6 +550,9 @@
             margin-bottom: 15px;
             font-size: 18px;
             font-weight: 600;
+            @media #{$sm-layout} {
+                font-size: 14px;
+            }
             &:last-child{
                 border-bottom: none;
                 margin-bottom: 0;
@@ -436,6 +565,9 @@
     }
     .tab-content{
         margin-left: 30px;
+        @media #{$sm-layout} {
+            margin-left: 10px;
+        }
         .rts-tab-content-one{
             margin-right: -8px;
             p{
@@ -478,6 +610,31 @@
         }
     }
 }
+.home-blue{
+    .title-area{
+        &.service-h2{
+            .title{
+                @media #{$sm-layout} {
+                    font-size: 23px;
+                    color: #1C2539 !important;
+                    font-weight: 700;
+                    line-height: 58px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+.home-blue{
+    .title-area{
+        .title{
+            @media #{$sm-layout} {
+                font-size: 23px;
+                line-height: 30px;
+            }
+        }
+    }
+}
 
 .about-company-thumbnail{
     position: relative;
@@ -494,9 +651,31 @@
         top: -10%;
         left: 4%;
         animation: jump-1 5s linear infinite;
+        @media #{$laptop-device} {
+            height: 447.43px;
+            min-width: 660px;
+        }
+        @media #{$smlg-device} {
+            height: 380.43px;
+            min-width: 712px;
+        }
+        @media #{$md-layout} {
+            height: 96%;
+        }
+        @media #{$sm-layout} {
+            height: 391.43px;
+            min-width: 712px;
+        }
+        @media #{$small-mobile} {
+            height: 100%;
+            min-width: 708px;
+        }
     }
     img{
         margin-left: 40px;
+        @media #{$sm-layout} {
+            width: 76%;
+        }
     }
 }
 

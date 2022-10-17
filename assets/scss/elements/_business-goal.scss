@@ -11,6 +11,10 @@
             right: 2%;
             animation: jump-2 5s linear infinite;
             z-index: 7;
+            @media #{$large-mobile} {
+                width: 50%;
+                top: 37%;
+            }
         }
     }
 }
@@ -42,8 +46,19 @@
 .goal-button-wrapper{
     display: flex;
     align-items: center;
+    @media #{$large-mobile} {
+        align-items: flex-start;
+        flex-direction: column;
+    }
     .vedio-icone{
-        margin-left: 80px;
+        margin-left: 70px;
+        @media #{$md-layout} {
+            margin-left: 136px;
+        }
+        @media #{$large-mobile} {
+            margin-left: 29px;
+            margin-top: 50px;
+        }
     }
 }
 
@@ -61,6 +76,12 @@
         width: 254px;
         height: 167px;
         animation: jump-1 5s linear infinite;
+        @media #{$sm-layout} {
+            width: inherit;
+            height: inherit;
+            padding: 22px;
+            bottom: -10%;
+        }
         .title{
             margin-bottom: 0;
             color: #fff;
@@ -77,6 +98,9 @@
 
 .rts-business-solution-right{
     padding-left: 50px;
+    @media #{$sm-layout} {
+        padding-left: 0;
+    }
     .title-area{
         .sub{
             color: var(--color-primary-3);
@@ -88,8 +112,32 @@
             font-size: 60px;
             line-height: 65px;
             text-transform: uppercase;
+            @media #{$laptop-device} {
+                font-size: 50px;
+            }
+            @media #{$smlg-device} {
+                font-size: 36px;
+                line-height: 50px;
+            }
+            @media #{$sm-layout} {
+                font-size: 34px;
+                line-height: 45px;
+            }
+            @media #{$large-mobile} {
+                font-size: 24px;
+                line-height: 40px;
+            }
             span{
                 font-size: 48px;
+                @media #{$smlg-device} {
+                    font-size: 30px;
+                }
+                @media #{$sm-layout} {
+                    font-size: 34px;
+                }
+                @media #{$sm-layout} {
+                    font-size: 24px;
+                }
                 span{
                     color: var(--color-primary-3);
                 }
@@ -117,6 +165,9 @@
     border-left: 8px solid transparent;
     transition: .3s;
     margin-bottom: 25px;
+    @media #{$small-mobile} {
+        padding: 15px 10px;
+    }
     &:hover{
         transform: translateY(-5px);
     }
@@ -134,10 +185,16 @@
     }
     .content{
         padding-left: 30px;
+        @media #{$small-mobile} {
+            padding-left: 45px;
+        }
     }
     .title{
         font-size: 22px;
         margin-bottom: 5px;
+        @media #{$small-mobile} {
+            font-size: 16px;
+        }
     }
     p{
         &.disc{
@@ -236,6 +293,7 @@
         .thumbnail{
             img{
                 transform: scale(1.1);
+                filter: grayscale(1);
             }
         }
         &::after{

@@ -42,7 +42,8 @@
 	-webkit-transition: all 200ms linear;
     transition: all 200ms linear;
     border: 2px solid var(--color-primary);
-    box-shadow: 0px 3px 20px 6px #e9070752;
+    box-shadow: none;
+	border-radius: 50% !important;
 	border-radius: 5px;
 }
 .progress-wrap:hover::after {
@@ -79,6 +80,8 @@
 }
 .progress-wrap svg { 
     color: #df0a0a;
+	border-radius: 50%;
+	background: #fff;
 }
 .progress-wrap svg.progress-circle path {
     stroke: #df0a0a;

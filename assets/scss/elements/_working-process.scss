@@ -2,10 +2,12 @@
 
 .working-process-bg{
     background-image: url(../images/working-step/bg-01.jpg);
-    width: 1680px;
+    max-width: 1680px;
     margin:0 auto ; 
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+
 }
 
 
@@ -102,10 +104,17 @@
         position: relative;
         margin-bottom: 120px;
         margin-top: 30px;
+        @media #{$small-mobile} {
+            margin-bottom: 80px;
+        }
         .ratio-area{
             position: absolute;
             top: 60px;
             left: 60px;
+            @media #{$small-mobile} {
+                top: 30px;
+                left: 30px;
+            }
             .ratio{
                 color: #fff;
                 margin-bottom: 0px;
@@ -116,6 +125,9 @@
                 font-size: 18px;
                 font-weight: 500;
                 color: #fff;
+                @media #{$small-mobile} {
+                    font-size: 16px;
+                }
             }
         }
         img{
@@ -135,6 +147,9 @@
                 position: absolute;
                 left: 18%;
                 top: 38%;
+                @media #{$laptop-device} {
+                    width: 85%;
+                }
             }
         }
     }

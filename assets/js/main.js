@@ -24,6 +24,8 @@
             imJs.typeJS();
             imJs.searchOpton();
             imJs.menuActive();
+            imJs.popupMobileMenu();
+            imJs.preloader();
         },
         swiperActivation: function (){
           $(document).ready(function() {
@@ -163,6 +165,7 @@
               slidesPerGroup: 1,
               loop: true,
               loopFillGroupWithBlank: true,
+              centeredSlides: false,
               pagination: {
                 el: ".swiper-pagination",
                 type: "fraction",
@@ -173,11 +176,32 @@
               },
               autoplay: {
                 delay: 3000,
+              },              
+              breakpoints: {
+                1500: {
+                  slidesPerView: 4,
+                },
+                1300: {
+                  slidesPerView: 4,
+                },
+                991: {
+                  slidesPerView: 3,
+                  
+                },
+                767: {
+                  slidesPerView: 3,
+                },
+                575: {
+                  slidesPerView: 2,
+                },
+                0: {
+                  slidesPerView: 1,
+                }
               },
             });
           });
           $(document).ready(function() {
-            var swiper = new Swiper(".mySwiperh1_blog", {
+            var swiper = new Swiper(".mySwiperh3_team", {
               slidesPerView: 3,
               spaceBetween: 30,
               slidesPerGroup: 1,
@@ -193,8 +217,77 @@
               },
               autoplay: {
                 delay: 3000,
+              },              
+              breakpoints: {
+                1500: {
+                  slidesPerView: 3,
+                },
+                1399: {
+                  slidesPerView: 3,
+                },
+                991: {
+                  slidesPerView: 2,
+                },
+                767: {
+                  slidesPerView: 2,
+                },
+                575: {
+                  slidesPerView: 2,
+                },
+                0: {
+                  slidesPerView: 1,
+                }
               },
             });
+          });
+          $(document).ready(function() {
+            var swiper = new Swiper(".mySwiperh1_blog", {
+                 slidesPerView: 1,
+                 spaceBetween: 30,
+                 slidesPerView: 3,
+                 speed: 1500,
+                 loop: true,
+                 loopFillGroupWithBlank: true,
+                 centeredSlides: false,
+                 breakpoints: {
+                   1600: {
+                     slidesPerView: 3,
+                   },
+                   1300: {
+                     slidesPerView: 3,
+                   },
+                   1220: {
+                     slidesPerView: 3,
+                   },
+                   1200: {
+                     slidesPerView: 3,
+                   },
+                   900: {
+                     slidesPerView: 2,
+                   },
+                   576: {
+                     slidesPerView: 2,
+                   },  
+                   0: {
+                     slidesPerView: 1,
+                   },                
+
+                 },
+                 autoplay: {
+                   delay: 2500,
+                   disableOnInteraction: true
+                 },
+                 navigation: {
+                   prevEl: ".swiper-button-prev",
+                   nextEl: ".swiper-button-next",
+                 },
+                 pagination: {
+                   el: ".swiper-pag",
+                   clickable: true,
+                 }
+            });
+
+
           });
           $(document).ready(function() {
             var swiper = new Swiper(".mySwiperh2_banner", {
@@ -220,7 +313,7 @@
           $(document).ready(function() {
             var swiper = new Swiper(".mySwiperh3_banner", {
               slidesPerView: 1,
-              spaceBetween: 30,
+              spaceBetween: 0,
               slidesPerGroup: 1,
               loop: true,
               loopFillGroupWithBlank: true,
@@ -540,6 +633,11 @@
             $("#anywhere-home").removeClass("bgshow");
           });
         },
+        preloader:function(){
+          window.addEventListener('load',function(){
+            document.querySelector('body').classList.add("loaded")  
+          });          
+        },
         menuActive:function(){
           $(document).on('click', '#menu-btn', function () {
             $("#side-bar").addClass("show");
@@ -553,6 +651,35 @@
             $("#side-bar").removeClass("show");
             $("#anywhere-home").removeClass("bgshow");
           });
+        },
+        popupMobileMenu: function (e) {
+          $('.hamberger-button').on('click', function (e) {
+              $('.popup-mobile-menu').addClass('active');
+          });
+
+          $('.close-menu').on('click', function (e) {
+              $('.popup-mobile-menu').removeClass('active');
+              $('.popup-mobile-menu .mainmenu .has-droupdown > a, .popup-mobile-menu .mainmenu .with-megamenu > a').siblings('.submenu, .rts-megamenu').removeClass('active').slideUp('400');
+              $('.popup-mobile-menu .mainmenu .has-droupdown > a, .popup-mobile-menu .mainmenu .with-megamenu > a').removeClass('open')
+          });
+
+          // nav menu
+          $('.body-mobile .mainmenu .has-droupdown > a, .body-mobile .mainmenu .with-megamenu > a').on('click', function (e) {
+              e.preventDefault();
+              $(this).siblings('.submenu, .rts-megamenu').toggleClass('active');
+              $(this).toggleClass('open')
+          })
+          // nav menu end
+
+          $('.popup-mobile-menu').on('click', function (e) {
+              e.target === this && $('.popup-mobile-menu').removeClass('active') && $('.popup-mobile-menu .mainmenu .has-droupdown > a, .popup-mobile-menu .mainmenu .with-megamenu > a').siblings('.submenu, .rts-megamenu').removeClass('active').slideUp('400') && $('.popup-mobile-menu .mainmenu .has-droupdown > a, .popup-mobile-menu .mainmenu .with-megamenu > a').removeClass('open');
+          });
+
+          $('.one-page-vavigation-popup .mainmenu li > a').on('click' , function (e) {
+              e.preventDefault();
+              $('.popup-mobile-menu').removeClass('active');
+              $('.popup-mobile-menu .mainmenu li > a').siblings('.submenu').removeClass('active');
+          })
         }
     }
   

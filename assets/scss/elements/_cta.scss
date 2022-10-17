@@ -28,13 +28,46 @@
     justify-content: space-between;
     align-items: center;
     padding: 100px 120px;
+    @media #{$md-layout} {
+        padding: 50px 60px;
+    }
+    @media #{$sm-layout} {
+        padding: 50px 60px;
+        flex-direction: column;
+    }
     .cta-left{
         width: 50%;
+        @media #{$sm-layout} {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    .cta-right{
+        @media #{$sm-layout} {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .rts-btn{
+            @media #{$small-mobile} {
+                padding: 13px 20px;
+                font-size: 14px;
+            }
+        }
     }
     .title{
         color: #fff;
         margin-bottom: 0;
         font-size: 40px;
+        @media #{$smlg-device} {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        @media #{$small-mobile} {
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 500;
+        }
     }
 }
 
@@ -54,8 +87,17 @@
     align-items: center;
     justify-content: space-between;
     padding: 90px 0;
+    @media #{$sm-layout} {
+        flex-direction: column;
+        padding: 45px 0;
+    }
     .title-area{
         width: 70%;
+        @media #{$sm-layout} {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 25px;
+        }
         .title{
             text-transform: uppercase;
             color: #fff;
@@ -63,6 +105,14 @@
             font-weight: 700;
             font-size: 40px;
             line-height: 53px;
+            @media #{$smlg-device} {
+                font-size: 30px;
+                line-height: 45px;
+            }
+            @media #{$sm-layout} {
+                font-size: 24px;
+                line-height: 36px;
+            }
         }
     }
 }
@@ -86,6 +136,9 @@
             z-index: 1;
             font-size: 30px;
             color: var(--color-primary-2);
+            @media #{$small-mobile} {
+                top: 34px;
+            }
             &::after{
                 position: absolute;
                 width: 120px;
@@ -97,6 +150,10 @@
                 background: #fff;
                 border-radius: 50%;
                 z-index: -1;
+                @media #{$small-mobile} {
+                    width: 80px;
+                    height: 80px;
+                }
             }
         }
     }
@@ -112,6 +169,9 @@
                 line-height: 29px;
                 color: #fff;
                 margin-bottom: 30px;
+                @media #{$small-mobile} {
+                    margin-bottom: 0;
+                }
                 span{
                     font-weight: 800;
                 }
@@ -123,6 +183,9 @@
                 font-weight: 700;
                 color: #fff;
                 margin-top: 20px;
+                @media #{$large-mobile} {
+                    font-size: 41px;
+                }
             }
         }
         a{
