@@ -39,11 +39,7 @@
                 speed:500,
                 autoplay: {
                     delay: 4000,
-                },
-                // pagination: {
-                //   el: ".swiper-pagination",
-                //   dynamicBullets: true,
-                // },
+                },                
               });
           });
           $(document).ready(function() {
@@ -96,6 +92,27 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
               },
+              breakpoints: {
+                1500: {
+                  slidesPerView: 3,
+                },
+                1300: {
+                  slidesPerView: 3,
+                },
+                991: {
+                  slidesPerView: 3,
+                  
+                },
+                767: {
+                  slidesPerView: 2,
+                },
+                575: {
+                  slidesPerView: 2,
+                },
+                0: {
+                  slidesPerView: 1,
+                }
+              },
             });
           });
           $(document).ready(function() {
@@ -116,8 +133,30 @@
               autoplay: {
                 delay: 3000,
               },
+              breakpoints: {
+                1500: {
+                  slidesPerView: 4,
+                },
+                1300: {
+                  slidesPerView: 4,
+                },
+                991: {
+                  slidesPerView: 3,
+                  
+                },
+                767: {
+                  slidesPerView: 2,
+                },
+                575: {
+                  slidesPerView: 2,
+                },
+                0: {
+                  slidesPerView: 1,
+                }
+              },
             });
           });
+
           $(document).ready(function() {
             var swiper = new Swiper(".mySwiperh2_clients", {
               slidesPerView: 3,
@@ -135,6 +174,27 @@
               },
               autoplay: {
                 delay: 3000,
+              },
+              breakpoints: {
+                1500: {
+                  slidesPerView: 3,
+                },
+                1300: {
+                  slidesPerView: 3,
+                },
+                1199: {
+                  slidesPerView: 2,
+                  
+                },
+                767: {
+                  slidesPerView: 2,
+                },
+                575: {
+                  slidesPerView: 1,
+                },
+                0: {
+                  slidesPerView: 1,
+                }
               },
             });
           });
@@ -155,6 +215,27 @@
               },
               autoplay: {
                 delay: 3000,
+              },
+              breakpoints: {
+                1500: {
+                  slidesPerView: 3,
+                },
+                1300: {
+                  slidesPerView: 3,
+                },
+                1199: {
+                  slidesPerView: 2,
+                  
+                },
+                767: {
+                  slidesPerView: 2,
+                },
+                575: {
+                  slidesPerView: 1,
+                },
+                0: {
+                  slidesPerView: 1,
+                }
               },
             });
           });
@@ -316,8 +397,7 @@
               spaceBetween: 0,
               slidesPerGroup: 1,
               loop: true,
-              loopFillGroupWithBlank: true,
-              // effect: 'fade',
+              loopFillGroupWithBlank: true,              
               pagination: {
                 el: ".swiper-pagination",
                 type: "fraction",
@@ -684,5 +764,4 @@
     }
   
     imJs.m();
-  })(jQuery, window)
-  
+  })(jQuery, window)  

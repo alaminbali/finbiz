@@ -224,6 +224,7 @@
     overflow: hidden;
     z-index: 1;
     border-radius: 20px;
+    width: 100%;
     &::after{
         content: "";
         position: absolute;
@@ -257,6 +258,12 @@
         border-radius: 20px;
         overflow: hidden;
         z-index: 10;
+        @media #{$md-layout} {
+            padding: 20px;
+        }
+        @media #{$sm-layout} {
+            padding: 15px;
+        }
         a{
             &:hover{
                 .title{
@@ -287,6 +294,13 @@
             font-size: 24px;
             line-height: 32px;
             color: #1C2539;
+            @media #{$md-layout} {
+                font-size: 20px;
+            }
+            @media #{$sm-layout} {
+                font-size: 18px;
+                margin-bottom: -4px;
+            }
         }
     }
     &:hover{

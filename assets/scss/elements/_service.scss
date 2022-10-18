@@ -776,9 +776,6 @@
     padding-top: 320px;
     background-size: cover;
     background-repeat: no-repeat;
-    @media #{$md-layout} {
-        padding-top: 200px;
-    }
     @media #{$sm-layout} {
         padding-top: 294px;
     }
@@ -811,6 +808,7 @@
         .title{
             margin-bottom: 10px;
             transition: .3s;
+            font-size: 22px;
         }
         p{
             &.disc{
@@ -857,6 +855,30 @@
 
 
 .navigation-center-bottom{
+    &.service{
+        .swiper-button-next{
+            @media #{$md-layout} {
+                right: 40%;
+            }
+            @media #{$sm-layout} {
+                right: 40%;
+            }
+            @media #{$large-mobile} {
+                right: 36%;
+            }
+        }
+        .swiper-button-prev{
+            @media #{$md-layout} {
+                left: 40%;
+            }
+            @media #{$sm-layout} {
+                left: 40%;
+            }
+            @media #{$large-mobile} {
+                left: 36%;
+            }
+        }
+    }
     display: flex;
     align-items: center;
     .swiper-pagination{

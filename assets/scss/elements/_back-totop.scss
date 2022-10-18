@@ -10,7 +10,6 @@
 	cursor: pointer;
 	display: block;
 	border-radius: 50px;
-	// box-shadow: inset  0 0 0 2px rgba(0,0,0,0.1);
 	z-index: 10000;
 	opacity: 1;
 	visibility: hidden;
@@ -31,7 +30,7 @@
 	text-align: center;
 	line-height: 46px;
 	font-size: 24px;
-	color: var(--color-primary); /* --- Pijl kleur --- */
+	color: var(--color-primary);
 	left: 0;
 	top: 0;
 	height: 46px;
@@ -59,7 +58,7 @@
 	line-height: 46px;
 	font-size: 24px;
 	opacity: 0;
-	background: var(--color-primary); /* --- Pijl hover kleur --- */
+	background: var(--color-primary);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	left: 0;

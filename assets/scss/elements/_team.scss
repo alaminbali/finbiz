@@ -4,6 +4,18 @@
 .bg-team{
     background-image: url(../images/team/bg-01.jpg);
     height: 1029px;
+    @media #{$laptop-device} {
+        height: 978px;
+    }
+    @media only screen and (max-width: 1499px) {
+        height: 931px;
+    }
+    @media only screen and (max-width: 1399px) {
+        height: 879px;
+    }
+    @media #{$smlg-device} {
+        height: auto;
+    }
 }
 .bg-team-color{
     background: #F6F6F6;
@@ -120,10 +132,9 @@
         }
     }
 }
-
-
 .team-inner-two{
     position: relative;
+    width: 100%;
     a{
         &.thumbnail{
             overflow: hidden;

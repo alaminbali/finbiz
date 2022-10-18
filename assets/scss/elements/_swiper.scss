@@ -110,4 +110,13 @@
 
 .mySwiperh3_team{
   padding-bottom: 109px;
+  @media #{$large-mobile} {
+    padding-bottom: 30px;
+  }
+}
+
+.mySwiperh2_Business_Cases{
+  .swiper-slide{
+    background: transparent;
+  }
 }

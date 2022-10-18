@@ -30,6 +30,15 @@
 .mapdetails-inner-one{
     margin-left: 305px;
     display: flex;
+    @media #{$laptop-device} {
+        margin-left: 200px;
+    }
+    @media #{$smlg-device} {
+        margin-left: 50px;
+    }
+    @media #{$md-layout} {
+        padding: 30px 0;
+    }
     @media #{$sm-layout} {
         margin-left: 100px;
         padding: 30px 0;
@@ -49,6 +58,7 @@
         .title{
             position: relative;
             margin-bottom: 40px;
+            min-width: max-content;
             &::after{
                 content: '';
                 position: absolute;
@@ -61,6 +71,12 @@
         }
         &:first-child{
             border-right: 1px solid #E4E4E4;
+            @media #{$md-layout} {
+                border: none;
+            }
+            @media #{$sm-layout} {
+                border: none;
+            }
             @media #{$large-mobile} {
             border-right: none;
             }
@@ -70,7 +86,13 @@
 
 .mapdetails-inner-one{
     display: flex;
+    @media #{$large-mobile} {
+        flex-direction: column;
+    }
     .left-area{
+        @media #{$large-mobile} {
+            margin-bottom: 30px;
+        }
         .details{
             p{
                 margin-bottom: 3px;

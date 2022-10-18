@@ -38,6 +38,10 @@
         img{
             max-width: 80px;
             height: 80px;
+            @media #{$small-mobile} {
+                max-width: 42px;
+                height: 42px;
+            }
         }
     }
     .details{
@@ -63,6 +67,9 @@
 .mySwipertestimonial{
     .swiper-button-next{
         right: 30%;
+        @media #{$small-mobile} {
+            right: 4%;
+        }
         &::after{
             content: "\f061";
             font-family: "Font Awesome 5 Pro";
@@ -89,6 +96,9 @@
     }
     .swiper-button-prev{
         left: 57%;
+        @media #{$small-mobile} {
+            left: 68%;
+        }
         &::after{
             content: "\f060";
             font-family: "Font Awesome 5 Pro";
@@ -105,6 +115,7 @@
             line-height: 16px;
             padding: 15px;
             border: 1px solid rgba(0, 0, 0, 0.05);
+
         }
         &:hover{
             &::after{
@@ -116,6 +127,9 @@
     .swiper-button-next,
     .swiper-button-prev{
         top: 85%;
+        @media #{$small-mobile} {
+            top: 91%;
+        }
     }
 }
 
@@ -133,10 +147,21 @@
         background-image: url(../images/testimonials/shape/03.png);
         background-size: cover;
         animation: jump-2 5s linear infinite;
+        @media #{$smlg-device} {
+            display: none;
+        }
+        @media #{$laptop-device} {
+            display: none;
+        }
     }
 }
 
-
+.title-area.left-right.testimonial-h2 {
+    @media #{$large-mobile} {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
 
 
 
@@ -188,6 +213,13 @@
     }
 }
 
+.contact-image-one{
+    img{
+        @media #{$md-layout} {
+            width: 100%;
+        }
+    }
+}
 
 // client review style home two
 
@@ -213,6 +245,10 @@
         }
         .button-area{
             margin-left: auto;
+            @media #{$large-mobile} {
+                margin-left: 0;
+                margin-top: 25px;
+            }
         }
     }
 }
@@ -265,6 +301,7 @@
                 padding-bottom: 30px;
                 border-bottom: 2px solid #E9ECF1;
                 margin-bottom: 25px;
+                text-align: left;
             }
         }
         .body-end{

@@ -203,16 +203,6 @@
         background: #050a15b3;
         z-index: -1;
     }
-    // &::before{
-    //     position: absolute;
-    //     content: '';
-    //     background-image: url(../images/banner/shape/04.png);
-    //     height: 100%;
-    //     width: 650px;
-    //     background-size: cover;
-    //     right: 0;
-    //     bottom: 0;
-    // }
 }
 
 .banner-three-inner{
@@ -246,8 +236,6 @@
         top: 36%;
         font-size: 100px;
         font-weight: 800;
-        /* Warning: no fallback */
-        // background: -webkit-linear-gradient(-90deg, #ffffff 50%, #ffffff63 60%, #ffffff00 100%);
         -webkit-background-clip: text;
         -webkit-text-stroke: 2px transparent;
         // color: #291e1e;
@@ -447,9 +435,6 @@
                 height: 100%;
                 background: rgba(255, 255, 255, 0.336);
                 display: none;
-                @media #{$laptop-device} {
-                    display: block;
-                }
                 @media #{$smlg-device} {
                     display: block;
                 }
@@ -542,3 +527,17 @@ p{
     }
 }
 
+
+.rts-btn{
+    &.color-h-black{
+        &:hover{
+            background: #1c2539 !important;
+            color: #fff !important;
+        }
+    }
+}
+.header-two .main-header .content .header-right a.rts-btn{
+    &:hover{
+        color: #000;
+    }
+}

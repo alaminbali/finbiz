@@ -419,7 +419,6 @@
                         border: 1px solid #E3E3E3;
                         border-radius: 8px;
                         padding-right: 60px;
-                        // border: 1px solid transparent;
                         &:focus{
                             border: 1px solid var(--color-primary-3);
                         }
@@ -582,6 +581,9 @@
         padding: 30px;
         border-radius: 0;
         max-width: 100%;
+    }
+    @media #{$large-mobile} {
+        padding: 10px;
     }
 }
 .footer-two-single-wized.two {

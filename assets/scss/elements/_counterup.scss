@@ -7,11 +7,59 @@
     height: 762px;
     background-size: cover;
     background-repeat: no-repeat;
+    @media #{$laptop-device} {
+        height: 640px;
+    }
+    @media #{$smlg-device} {
+        height: auto;
+    }
 }
 
 .single-counter{
     display: flex;
     align-items: center;
+    &.two{
+        @media #{$large-mobile} {
+            justify-content: flex-start !important;
+            padding-left: 0 !important;
+            margin-top: 30px;
+        }
+    }
+    &.three{
+        @media #{$md-layout} {
+            justify-content: flex-start !important;
+            padding-left: 0 !important;
+            margin-top: 30px;
+        }
+        @media #{$sm-layout} {
+            padding-left: 0 !important;
+            margin-top: 30px !important;
+        }
+        @media #{$large-mobile} {
+            justify-content: flex-start !important;
+        }
+    }
+    &.four{
+        @media #{$smlg-device} {
+            justify-content: flex-start !important;
+            padding-left: 0 !important;
+            margin-top: 30px;
+        }
+        @media #{$md-layout} {
+            justify-content: flex-start !important;
+            padding-left: 61px !important;
+            margin-top: 30px;
+        }
+        @media #{$sm-layout} {
+            justify-content: flex-start !important;
+            padding-left: 32px !important;
+            margin-top: 30px;
+        }
+        @media #{$large-mobile} {
+            justify-content: flex-start !important;
+            padding-left: 0 !important;
+        }
+    }
     img{
         margin-right: 25px;
     }
@@ -22,6 +70,12 @@
             font-weight: 700;
             span{
                 position: relative;
+                @media #{$laptop-device} {
+                    font-size: 32px;
+                }
+                @media #{$sm-layout} {
+                    font-size: 26px;
+                }
                 &::after{
                     position: absolute;
                     right: -30px;
@@ -35,6 +89,9 @@
                     &::after{
                         content: 'k+';
                         right: -60px;
+                        @media #{$sm-layout} {
+                            right: -40px;
+                        }
                     }
                 }
             }
@@ -44,6 +101,12 @@
             font-size: 16px;
             font-weight: 500;
             text-transform: uppercase;
+            @media #{$laptop-device} {
+                font-size: 12px;
+            }
+            @media #{$sm-layout} {
+                font-size: 16px;
+            }
         }
     }
 }

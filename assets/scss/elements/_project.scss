@@ -277,8 +277,15 @@
 .title-area-business-case-3{
     display: flex;
     align-items: center;
+    @media #{$sm-layout} {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     a{
         margin-left: auto;
+        @media #{$sm-layout} {
+            margin-left: 0;
+        }
     }
     .title-area{
         .title{
@@ -297,37 +304,18 @@
             font-weight: 700;
         }
     }
-    a{
-        // &.rts-btn{
-        //     &:hover{
-        //         color: #000;
-        //         background: #fff;
-        //     }
-        // }
-    }
 }
 
 .rts-cse-study-3-wrapper{
+    width: 100%;
     .thumbnail{
         position: relative;
         display: block;
-        max-width: max-content;
         border-radius: 10px;
         overflow: hidden;
         img{
             width: 100%;
         }
-        // &::after{
-        //     position: absolute;
-        //     content: '';
-        //     left: 50%;
-        //     top: 50%;
-        //     transform: translate(-50%,-50%) scale(0);
-        //     width: 100%;
-        //     background: #0006;
-        //     height: 100%;
-        //     transition: .5s;
-        // }
         img{
             border-radius: 10px;
             filter: grayscale(0);

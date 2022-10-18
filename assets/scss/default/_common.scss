@@ -1,5 +1,3 @@
-
-
 body {
     scroll-behavior: auto;
     background: #FFFFFF;
@@ -105,6 +103,15 @@ body {
         right: -3%;
         background-repeat: no-repeat;
         bottom: -5%;
+        @media #{$laptop-device} {   
+            right: -15%;
+        }
+        @media #{$smlg-device} {   
+            right: -15%;
+        }
+        @media #{$md-layout} {   
+            left: 53%;
+        }
     }
     &::before{
         content: "";
@@ -118,6 +125,15 @@ body {
         background-size: cover;
         z-index: -1;
         background-repeat: no-repeat;
+        @media #{$laptop-device} {
+            left: -25%;
+        }
+        @media #{$smlg-device} {
+            left: -25%;
+        }
+        @media #{$md-layout} {
+            left: -48%;
+        }
     }
     .bg-shape-f1{
         position: relative;
@@ -132,6 +148,14 @@ body {
             top: -20%;
             z-index: -1;
             background-repeat: no-repeat;
+            @media #{$laptop-device} {
+                left: -30%;
+                top: -32%;
+            }
+            @media #{$smlg-device} {
+                left: -30%;
+                top: -32%;
+            }
         }
     }
 }
@@ -259,6 +283,10 @@ body {
             z-index: -1;
             height:109px;
             top: -18%;
+            @media #{$laptop-device} {
+                left: 55%;
+                font-size: 110px;
+            }
         }
     }
     &.reviews{
@@ -610,7 +638,7 @@ body {
                 left: 50%;
                 transform: translateX(-50%);
                 top: -39%;
-                content: "09";
+                content: "08";
             }
         }
         &.about-company{
@@ -661,12 +689,25 @@ body {
                 }
             }
         }
+        &.service-h2{
+            &.service{
+                &::after{
+                    left: 3%;
+                    transform: translateX(-50%);
+                    top: -42%;
+                    content: "04";
+                    @media #{$sm-layout} {
+                        left: 18%;
+                    }
+                }
+            }
+        }
         &.testimonial-h2{
             &::after{
                 left: 4%;
                 transform: translateX(-50%);
                 top: -38%;
-                content: "07";
+                content: "06";
                 color: #121212;
                 background-color: #ffffff6b;
             }
@@ -676,7 +717,7 @@ body {
                 left: 50%;
                 transform: translateX(-50%);
                 top: -40%;
-                content: "08";
+                content: "07";
             }
         }
         span{
@@ -698,8 +739,3 @@ body {
         background: var(--color-primary-2);
     }
 }
-
-
-
-// index-three
-

@@ -96,6 +96,9 @@
     border-radius: 15px;
     padding: 40px;
     margin-bottom: 40px;
+    &:last-child{
+        margin-bottom: 0;
+    }
     @media #{$small-mobile} {
         padding: 20px;
     }
@@ -552,7 +555,6 @@
             padding: 40px 0;
             border-top: 1px solid #E6E9F0;
             border-bottom: 1px solid #E6E9F0;
-            // flex-wrap: wrap;
             @media #{$sm-layout} {
                 align-items: flex-start;
             }
@@ -896,6 +898,10 @@
                     br{
                         display: none;
                     }
+                }
+                @media #{$small-mobile} {
+                    font-size: 18px;
+                    line-height: 29px;
                 }
             }
             &:hover{
