@@ -817,3 +817,147 @@
         padding: 0 10px;
     }
 }
+
+.footer-four{
+    background: #10151F;
+    .footer-three-single-wized{
+        .title{
+            color: #fff;
+        }
+        .disc{
+            color: #848C95;
+        }
+        .social-three-wrapper{
+            li{
+                a{
+                    color: #fff;
+                    &::after{
+                        border-radius: 50%;
+                        width: 45px;
+                        height: 45px;
+                        opacity: 0.05;
+                        box-shadow: 0px 9px 18px rgba(24, 16, 16, 0.05);
+                        
+                    }
+                    &:hover{
+                        &::after{
+                            background: var(--color-primary-4);
+                            opacity: 1;
+                        }
+
+                    }
+                }
+            }
+        }
+        .body{
+            .info-wrapper{
+                .single{
+                    .icon{
+                        li{
+                            color: #fff;
+                            &::after{
+                                width: 35px;
+                                height: 35px;
+                                opacity: 0.05;
+                                box-shadow: 0px 9px 18px rgba(24, 16, 16, 0.05);
+                            }
+                        }
+                    }
+                    .info{
+                        span{
+                            color: #848C95;
+                        }
+                        a{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .update-wrapper{
+                .email-footer-area{
+                    input{
+                        border: 1px solid #262D39;
+                        &:focus{
+                            border-color: var(--color-primary-4);
+                        }
+                    }
+                    button{
+                        background: var(--color-primary-4);
+                    }
+                }
+                .note-area{
+                    p{
+                        span{
+                            color: var(--color-primary-4);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .copyright-area{
+        border: none;
+        .disc{
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: #848C95;
+        }
+    }
+}
+.footer-five{
+    .rts-cta-wrapper{
+        .background-cta{
+            background-color: var(--color-primary-2);
+            .cta-input-arae{
+                .btn-primary{
+                    background: var(--color-primary-2);
+                    &:hover{
+                        background: var(--color-gray);
+                        color: var(--color-primary-2);
+                    }
+                }
+            }
+        }
+    }
+    .footer-one-single-wized{
+        .quick-link-inner{
+            .links{
+                li{
+                    a{
+                        &:hover{
+                            color: var(--color-primary-2);
+                        }
+                        &::after{
+                            background: var(--color-primary-2);
+                        }
+                    }
+                }
+            }
+        }
+        &.mid-bg{
+            .opening-time-inner{
+                .btn-primary{
+                    background: var(--color-primary-2);
+                    &:hover{
+                        background: var(--color-gray);
+                        color: var(--color-primary-2);
+                    }
+                }
+            }
+        }
+        .single-footer-post{
+            .post-right{
+                a{
+                    .title{
+                        &:hover{
+                            color: var(--color-primary-2);
+                        }
+                    }
+                }
+                .red-more{
+                    color: var(--color-primary-2);
+                }
+            }
+        }
+    }
+}

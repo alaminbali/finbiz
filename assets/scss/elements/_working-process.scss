@@ -154,3 +154,40 @@
         }
     }
 }
+.working-process-area2{
+    background: url("../images/working-step/bg-02.jpg");
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container{
+        .title-area{
+            span{
+                color: #fff;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 23px;
+            }
+            .title{
+                color: #fff;
+            }
+        }
+        .rts-working-process-1{
+            .inner{
+                border-color: #5264f330;
+                &::after{
+                    background: var(--color-primary-4);
+                }
+            }
+            &:hover{
+                .inner{
+                    border-color: var(--color-primary-4);
+                }
+            }
+            .content{
+                .title{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

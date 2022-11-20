@@ -78,6 +78,13 @@
     .pre-title{
         letter-spacing: 0.1em;
     }
+    .error{
+        color: var(--color-primary);
+    }
+    .success{
+        color: green;
+        margin-bottom: 15px;
+    }
 }
 
 .contact-map-area-fluid{
@@ -105,6 +112,14 @@
         margin: auto;
         @media #{$large-mobile} {
             width: 90%;
+        }
+        .error{
+            color: var(--color-primary);
+            margin-bottom: 15px;
+        }
+        .success{
+            color: green;
+            margin-bottom: 15px;
         }
     }
 }
@@ -157,3 +172,87 @@
     }
 }
 
+
+.onepage.two .rts-contact-fluid .form-wrapper{
+    width: 100%;
+}
+.onepage.two{
+    .rts-contact-fluid{
+        box-shadow: none;
+    }
+    .rts-title-area p.pre-title{
+        font-size: 18px;
+        color: #5D666F !important;
+        font-weight: 500 !important;
+    }
+    .rts-title-area.contact-fluid::after {
+        content: "09";
+        left: 49%;
+        transform: translateX(-50%);
+        z-index: -1;
+        height: 109px;
+        top: -40%;
+        min-width: max-content;
+    }
+}
+
+.contact-four{
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url(../images/contact/shape/02.png) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+        left: -2%;
+        bottom: 10%;
+        animation: rotateIt 15s linear infinite;
+        @media(max-width:768px){
+            display: none;
+        }
+    }
+    &::after{
+        background-image: url(../images/contact/shape/02.png) !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        right: 8% !important;
+        top: 20% !important;
+    }
+    .container{
+        .contact-image-one{
+            img{
+                width: 100%;
+            }
+        }
+        .contact-form-area-one{
+            @media(max-width:767px){
+                padding-top: 50px;
+            }
+            .rts-title-area{
+                &::after{
+                    display: none;
+                }
+                .pre-title{
+                    color: var(--color-primary-4);
+                }
+            }
+            .btn-primary{
+                background: var(--color-primary-4);
+                &:hover{
+                    color: var(--color-primary-4);
+                    background: #E4E7FF;
+                }
+            }
+            form{
+                input:focus{
+                    border-color: var(--color-primary-4);
+                }
+                textarea:focus{
+                    border-color: var(--color-primary-4);
+                }
+            } 
+                
+        }
+    }
+}

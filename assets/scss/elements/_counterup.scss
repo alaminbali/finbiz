@@ -13,6 +13,9 @@
     @media #{$smlg-device} {
         height: auto;
     }
+    &.bg-2{
+        height: auto;
+    }
 }
 
 .single-counter{
@@ -137,6 +140,20 @@
             }
             .disc{
                 color: #1C2539;
+            }
+        }
+    }
+}
+
+.counter-5{
+    background: #E9EFFF;
+    .single-counter{
+        .counter-details{
+            .title{
+                color: #000;
+            }
+            p{
+                color: #000;
             }
         }
     }

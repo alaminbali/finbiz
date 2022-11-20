@@ -413,6 +413,7 @@ ul {
         margin-top: 10px;
         margin-bottom: 10px;
         color: var(--color-body);
+        list-style: none;
 
         a {
             text-decoration: none;
@@ -538,5 +539,19 @@ h3{
     @media #{$small-mobile} {
         font-size: 22px;
         line-height: 30px;
+    }
+}
+
+.rts-typography-style{
+    .container{
+        .style{
+            margin-bottom: 40px;
+            .title{
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
     }
 }

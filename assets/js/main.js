@@ -26,6 +26,8 @@
             imJs.menuActive();
             imJs.popupMobileMenu();
             imJs.preloader();
+            imJs.smoothScroll();
+            imJs.textActivation();
         },
         swiperActivation: function (){
           $(document).ready(function() {
@@ -41,6 +43,209 @@
                     delay: 4000,
                 },                
               });
+          });
+          $(document).ready(function() {
+            var swiper = new Swiper(".testimonial-1", {
+              slidesPerView: 2.5,
+              spaceBetween: 24,
+              slidesPerGroup: 1,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              autoplay: {
+                delay: 3000,
+              },
+              breakpoints: {
+                1500: {
+                  slidesPerView: 2.5,
+                },
+                1300: {
+                  slidesPerView: 4,
+                },
+                991: {
+                  slidesPerView: 3,
+                  
+                },
+                767: {
+                  slidesPerView: 2,
+                },
+                575: {
+                  slidesPerView: 2,
+                },
+                0: {
+                  slidesPerView: 1,
+                }
+              },
+            });
+            $(document).ready(function() {
+              var swiper = new Swiper(".mySwiperBanner-three", {
+                  loop: false,
+                  loopedSlides: 50,
+                  autoHeight: true,
+                  shortSwipes: false,
+                  longSwipes: false,
+                  effect: 'fade',
+                  speed:500,
+                  autoplay: {
+                      delay: 4000,
+                  },                
+                });
+            });
+            var swiper = new Swiper(".brand-1", {
+              slidesPerView: 2.5,
+              spaceBetween: 100,
+              slidesPerGroup: 1,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              autoplay: {
+                delay: 3000,
+              },
+              breakpoints: {
+                1500: {
+                  slidesPerView: 5,
+                },
+                1300: {
+                  slidesPerView: 4,
+                },
+                991: {
+                  slidesPerView: 3,
+                  
+                },
+                767: {
+                  slidesPerView: 2,
+                },
+                575: {
+                  slidesPerView: 2,
+                },
+                0: {
+                  slidesPerView: 1,
+                }
+              },
+            });
+            var swiper = new Swiper(".team-one-swiper", {
+              slidesPerView: 2.5,
+              spaceBetween: 40,
+              slidesPerGroup: 1,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              autoplay: {
+                delay: 3000,
+              },
+              breakpoints: {
+                1500: {
+                  slidesPerView: 3,
+                },
+                1300: {
+                  slidesPerView: 3,
+                },
+                991: {
+                  slidesPerView: 3,
+                  
+                },
+                767: {
+                  slidesPerView: 2,
+                },
+                575: {
+                  slidesPerView: 2,
+                },
+                0: {
+                  slidesPerView: 1,
+                }
+              },
+            });
+            var swiper = new Swiper(".project-h2-slider", {
+              slidesPerView: 2.5,
+              spaceBetween: 24,
+              slidesPerGroup: 1,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              centeredSlides: true,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true
+              },
+              autoplay: {
+                delay: 3000,
+              },
+              breakpoints: {
+                1500: {
+                  slidesPerView: 4.2,
+                },
+                1300: {
+                  slidesPerView: 3,
+                },
+                991: {
+                  slidesPerView: 3,
+                  
+                },
+                767: {
+                  slidesPerView: 2,
+                },
+                575: {
+                  slidesPerView: 2,
+                },
+                0: {
+                  slidesPerView: 1,
+                }
+              },
+            });
+            var swiper = new Swiper(".testimonials-h2", {
+              slidesPerView: 2,
+              spaceBetween: 24,
+              slidesPerGroup: 1,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              // centeredSlides: true,
+              // navigation: {
+              //   nextEl: ".swiper-button-next",
+              //   prevEl: ".swiper-button-prev",
+              // },
+              pagination: {
+                el: '.swiper-pagination2',
+                clickable: true,
+                dynamicBullets: false
+              },
+              autoplay: {
+                delay: 3000,
+              },
+              breakpoints: {
+                1500: {
+                  slidesPerView: 2,
+                },
+                1300: {
+                  slidesPerView: 2,
+                },
+                991: {
+                  slidesPerView: 2,
+                  
+                },
+                767: {
+                  slidesPerView: 1,
+                },
+                575: {
+                  slidesPerView: 1,
+                },
+                0: {
+                  slidesPerView: 1,
+                }
+              },
+            });
           });
           $(document).ready(function() {
             var swiper = new Swiper(".mySwipers", {
@@ -412,6 +617,8 @@
             });
           });
         },
+
+        
         vedioActivation: function (e) {
           $('#play-video, .play-video').on('click', function (e) {
               e.preventDefault();
@@ -731,6 +938,10 @@
             $("#side-bar").removeClass("show");
             $("#anywhere-home").removeClass("bgshow");
           });
+          $(document).on('click', '.onepage .mainmenu li a', function () {
+            $("#side-bar").removeClass("show");
+            $("#anywhere-home").removeClass("bgshow");
+          });
         },
         popupMobileMenu: function (e) {
           $('.hamberger-button').on('click', function (e) {
@@ -760,7 +971,64 @@
               $('.popup-mobile-menu').removeClass('active');
               $('.popup-mobile-menu .mainmenu li > a').siblings('.submenu').removeClass('active');
           })
+        },
+        
+        // pne page scroll top
+        smoothScroll: function (e) {
+          $(document).on('click', '.onepage a[href^="#"]', function (event) {
+            event.preventDefault();
+        
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 2000);
+          });
+        },
+        // pne page scroll top
+        textActivation: function (e) {
+          $(document).ready(function(){
+            var chagne = $('.changebox');
+            if(chagne.length){
+            var changebox = $(".changebox");
+            
+            var firstclone = changebox.children(":first").clone();
+            changebox.append(firstclone);
+            
+            var fsstr = changebox.parent().css("font-size");
+            fsstr = fsstr.slice(0,fsstr.indexOf(".title"));
+            var fs = parseInt(fsstr);
+            
+            changebox.css("height",changebox.parent().css("font-size") );
+            ChangeSize(0);
+            setInterval(Next,2000);
+            
+            function Next(){
+               if( typeof Next.i == 'undefined' ) {
+                 Next.i = 0;
+               }
+              Next.i++;
+               if(Next.i == changebox.children("span").length){
+                  Next.i = 1;
+                  changebox.scrollTop(0);
+               }
+               changebox.animate({scrollTop: (fs*Next.i)+Next.i*5+3},500);
+               setTimeout(function(){
+                  ChangeSize(Next.i);
+               },500);
+               
+            }
+            
+            function ChangeSize(i){
+            var word = changebox.children("span").eq(i);
+            var wordsize = word.css("width");
+            changebox.css("width",wordsize);
+         }
         }
+            
+            
+         });
+         
+        },
+        // smooth scroll one page stop
     }
   
     imJs.m();

@@ -245,6 +245,7 @@ p.disc {
         display: flex;
         align-items: center;
         padding: 40px;
+        background-color: var(--color-primary-alta);
         @media #{$sm-layout} {
             padding: 15px;
         }

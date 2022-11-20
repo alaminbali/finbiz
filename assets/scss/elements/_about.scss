@@ -163,7 +163,7 @@
                         background: var(--color-primary);
                     }
                     span{
-                        border-left: 18px solid #ffffff;
+                        border-left: 14px solid #ffffff;
                     }
                 }
             }
@@ -241,6 +241,10 @@
                 margin-top: 40px;
             }
         }
+    }
+    &.inner1{
+        max-width: 700px;
+        margin: 0 auto;
     }
 }
 

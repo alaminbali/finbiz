@@ -134,4 +134,17 @@
     }
 }
 
+.rts-trusted-client2{
+    .container{
+        .title-area-client{
+            &::before{
+                background: var(--color-primary-4);
+            }
+            &::after{
+                background: var(--color-primary-4);
+            }
+        }
+    }
+}
+
 
